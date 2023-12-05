@@ -11,8 +11,8 @@
         <div data-include="header__content.partial.html"></div>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="hat">
+            <div class="hat__content">
                 <h1>Contacts</h1>
                 <p>Order our services now! <a href="#">+ 1 (234) 567 89 00</a></p>
             </div>
@@ -65,33 +65,6 @@
                     </li>
                 </div>
                 </ul>
-                    <!-- Another version of the code written above
-                       
-                        <div class="questions">
-                <h2 class="questions__title">Still Have Question?</h2>
-                <p>Perhaps you'll find an answer to your question here.</p>
-                <details>
-                    <summary>What services do your provide?</summary>
-                    <p>We offer all services related to pet care. These include grooming, training, dog walking, pet sitting, pet hotel, etc.</p> 
-                </details>
-                <details>
-                    <summary>Do you have a professional vet?</summary>
-                    <p>Yes, we have 3 vets that specialize in different pets, from cats to parrots and exotic animals. Still, we're not a vet clinic, so our vets provide only consultations and do not perform any procedures.</p>
-                </details>
-                <details>
-                    <summary>What does a pet sitter do?</summary>
-                    <p>A pet sitter is a person that looks after your pets when you're out. It includes feeding, washing, providing walks and exercises, etc.</p>
-                </details>
-                <details>
-                    <summary>Can I leave my pet at your place?</summary>
-                    <p>Yes, you travel with peace of mind. We have a mini-hotel for all kinds of pets. It is spacious, comfortable, and fully equipped.</p>
-                </details>
-                <details>
-                    <summary>Can I order one-time pet sitting services?</summary>
-                    <p>Sure, if you need a pet sitter just once, you can order such a service. Also, you can request a pet sitter for 1-2 hours and decide whether you want to use our services later.</p>
-                </details>
-                <div class="form">
-             -->
             </div>
             <div class="form">
                 <form action="#" method="post">
@@ -107,7 +80,12 @@
                     <div class="form_field">
                         <input class="form__input" type="text" placeholder="Service*" required name="service">
                     </div>
-                    
+                    <div class="form_field">
+                        <input type="date" placeholder="Choose date" name="form_date">
+                    </div>
+                    <div class="form_button">
+                        <button type="submit">Request a quote</button>
+                    </div>
                 </form>
             </div>
         </section>
