@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contacts</title>
+</head>
+
+<body>
+    <header class="header">
+        <div data-include="header__content.partial.html"></div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Contacts</h1>
+                <p>Order our services now! <a href="#">+ 1 (234) 567 89 00</a></p>
+            </div>
+        </section>
+        <section>
+            <div class="questions">
+                <h2 class="questions__title">Still Have Question?</h2>
+                <p class="questions__text">Perhaps you'll find an answer to your question here.</p>
+                <ul>
+                <div class="accordion">
+                    <li>
+                    <div class="accordion__item">
+                        <button class="accordion__button">What services do your provide?</button>
+                        <div class="accordion__content">
+                            <p>We offer all services related to pet care. These include grooming, training, dog walking, pet sitting, pet hotel, etc.</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="accordion__item">
+                        <button class="accordion__button">Do you have a professional vet?</button>
+                        <div class="accordion__content">
+                            <p>Yes, we have 3 vets that specialize in different pets, from cats to parrots and exotic animals. Still, we're not a vet clinic, so our vets provide only consultations and do not perform any procedures.</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="accordion__item">
+                        <button class="accordion__button">What does a pet sitter do?</button>
+                        <div class="accordion__content">
+                            <p>A pet sitter is a person that looks after your pets when you're out. It includes feeding, washing, providing walks and exercises, etc.</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="accordion__item">
+                        <button class="accordion__button">Can I leave my pet at your place?</button>
+                        <div class="accordion__content">
+                            <p>Yes, you travel with peace of mind. We have a mini-hotel for all kinds of pets. It is spacious, comfortable, and fully equipped.</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="accordion__item">
+                    <button class="accordion__button">Can I order one-time pet sitting services?</button>
+                    <div class="accordion__content">
+                        <p>Sure, if you need a pet sitter just once, you can order such a service. Also, you can request a pet sitter for 1-2 hours and decide whether you want to use our services later.</p>
+                    </div>
+                    </div>
+                    </li>
+                </div>
+                </ul>
+                    <!-- Another version of the code written above
+                       
+                        <div class="questions">
+                <h2 class="questions__title">Still Have Question?</h2>
+                <p>Perhaps you'll find an answer to your question here.</p>
+                <details>
+                    <summary>What services do your provide?</summary>
+                    <p>We offer all services related to pet care. These include grooming, training, dog walking, pet sitting, pet hotel, etc.</p> 
+                </details>
+                <details>
+                    <summary>Do you have a professional vet?</summary>
+                    <p>Yes, we have 3 vets that specialize in different pets, from cats to parrots and exotic animals. Still, we're not a vet clinic, so our vets provide only consultations and do not perform any procedures.</p>
+                </details>
+                <details>
+                    <summary>What does a pet sitter do?</summary>
+                    <p>A pet sitter is a person that looks after your pets when you're out. It includes feeding, washing, providing walks and exercises, etc.</p>
+                </details>
+                <details>
+                    <summary>Can I leave my pet at your place?</summary>
+                    <p>Yes, you travel with peace of mind. We have a mini-hotel for all kinds of pets. It is spacious, comfortable, and fully equipped.</p>
+                </details>
+                <details>
+                    <summary>Can I order one-time pet sitting services?</summary>
+                    <p>Sure, if you need a pet sitter just once, you can order such a service. Also, you can request a pet sitter for 1-2 hours and decide whether you want to use our services later.</p>
+                </details>
+                <div class="form">
+             -->
+            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <div class="form_field">
+                    <input class="form__input" id="full-name" type="text" placeholder="Enter your full name*" required name="full-name">
+                    </div>
+                    <div class="form_field">
+                        <input class="form__input" id="phone-number" type="tel" placeholder="Enter your phone number*" required name="phone-number">
+                    </div>
+                    <div class="form_field">
+                        <input  class="form__input" id="pet-info" type="text" placeholder="Pet's name and age*" required name="pet-info">
+                    </div>
+                    <div class="form_field">
+                        <input class="form__input" type="text" placeholder="Service*" required name="service">
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
