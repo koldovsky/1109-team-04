@@ -1,0 +1,219 @@
+/* FONT */
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url(./fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Rubik SemiBold";
+    src: url(./fonts/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Rubik Regular";
+    src: url(./fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Medium";
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins SemiBold";
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+/* MEDIA */
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins Regular";
+}
+
+.container {
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: "Rubik Bold";
+}
+
+h3 {
+    font-family: "Rubik SemiBold";
+}
+
+/* Title section */
+
+.services {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(251, 241, 231);
+    padding: 40px 0;
+}
+
+.services__title {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 44px;
+}
+
+.services__title h1 {
+    color: rgb(255, 91, 46);
+    font-size: 42px;
+    line-height: 54.6px;
+}
+
+.services__title p {
+    color: rgb(4, 15, 115);
+    font-family: "Poppins Medium";
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 15px;
+}
+
+.services__title p a {
+    color: rgb(255, 91, 46);
+}
+
+/* Block section */
+
+.ourservices {
+    display: flex;
+    justify-content: center;
+    padding: 110px 0 60px;
+    background-color: #fff6ed;
+}
+
+.ourservices__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 44px;
+}
+
+.ourservices__title {
+    text-align: center;
+}
+
+.ourservices__title h2 {
+    color: rgb(4, 15, 115);
+    font-size: 42px;
+    line-height: 54.6px;
+    margin-bottom: 30px;
+}
+
+.ourservices__title p {
+    color: rgb(66, 72, 117);
+    font-family: "Poppins Medium";
+    font-size: 19px;
+    line-height: 28.5px;
+    margin-bottom: 40px;
+}
+
+.ourservices__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.ourservices__img,
+.ourservices__text {
+    height: 488.31px;
+    width: 585px;
+}
+
+.ourservices__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ourservices__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(251, 241, 231);
+    padding: 60px 70px;
+}
+
+.ourservices__text-price {
+    color: rgb(255, 91, 46);
+    font-family: "Poppins SemiBold";
+    font-size: 13px;
+    line-height: 18.5705px;
+}
+
+.ourservices__text-title {
+    color: rgb(4, 15, 115);
+    font-family: "Rubik SemiBold";
+    font-size: 24px;
+    line-height: 34.284px;
+}
+
+.ourservices__text-description {
+    color: rgb(106, 110, 143);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+.ourservices__text-list {
+    color: rgb(66, 72, 117);
+    font-size: 17px;
+    line-height: 25.5px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ourservices__text-list li {
+    padding-left: 30px; 
+    background-image: url("img/icon-for-li.svg");
+    background-size: 20px 24px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.ourservices__text-list li:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.ourservices__text-button {
+    display: inline-block;
+    padding: 16px 28px;
+    text-decoration: none;
+    background-color: rgb(255, 91, 46);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: none;
+    font-family: "Poppins Bold";
+    font-size: 15.4px;
+    line-height: 18.48px;
+    width: 143.56px; 
+}
+
+.ourservices__text-button:hover {
+    background-color: rgb(66, 72, 117);
+}
