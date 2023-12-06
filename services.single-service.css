@@ -1,0 +1,190 @@
+/* FONT */
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url(./fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Rubik SemiBold";
+    src: url(./fonts/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Rubik Regular";
+    src: url(./fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Medium";
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins SemiBold";
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+/* MEDIA */
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins Regular";
+}
+
+.container {
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: "Rubik Bold";
+}
+
+/* MAIN */
+
+/* Title section */
+
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(251, 241, 231);
+    padding: 40px 0;
+}
+
+.title__container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    margin: 0 44px;
+}
+
+.title__container h1 {
+    color: rgb(255, 91, 46);
+    font-size: 42px;
+    line-height: 54.6px;
+}
+
+.title__container p {
+    color: rgb(4, 15, 115);
+    font-family: "Poppins Medium";
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 15px;
+}
+
+.title__container p a {
+    color: rgb(255, 91, 46);
+}
+
+/* Consultations section */
+
+.consultations {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 55px;
+    background-color: #fff6ed;
+}
+
+.consultations__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 44px;
+}
+
+.consultations__img {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-bottom: 60px;
+}
+
+.consultations__img img {
+    height: 100%;
+    width: 100%;
+}
+
+.consultations__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.consultations__title div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 322.69px;
+    max-width: 600px;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+
+.consultations__title-leftblock h2 {
+    color: rgb(4, 15, 115);
+    font-size: 38px;
+    line-height: 45.6px;
+}
+
+.consultations__title-leftblock h3 {
+    color: rgb(106, 110, 143);
+    font-family: "Poppins Medium";
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28.5px;
+}
+
+.consultations__title-leftblock p,
+.consultations__title-rightblock p {
+    color: rgb(106, 110, 143);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+.consultations__title-rightblock ul {
+    color: rgb(66, 72, 117);
+    font-size: 17px;
+    line-height: 25.5px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.consultations__title-rightblock li {
+    padding-left: 30px; 
+    background-image: url("img/icon-for-li.svg");
+    background-size: 20px 24px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.consultations__title-rightblock li:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.consultations__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 153px;
+    max-width: 1200px;
+    padding: 0 15px;
+    color: rgb(106, 110, 143);
+    font-size: 17px;
+    line-height: 25.5px;
+}
