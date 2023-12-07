@@ -1,0 +1,32 @@
+/* @import url(globals.css); */
+
+.team__members {
+    display: flex; 
+}
+
+.team__member {
+    margin-right: 20px; 
+}
+
+.team {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;  */
+}
+
+.team__info {
+    text-align: center;
+}
+
+.team__members {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;  */
+}
+
+.team__member {
+    margin: 20px;
+}
+
