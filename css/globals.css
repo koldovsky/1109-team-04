@@ -48,3 +48,8 @@ img {
     display: block;
     width: 100%;
 }
+
+h1, 
+h2 {
+    font-family: "Rubik Bold";
+}
