@@ -3,93 +3,110 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contacts</title>
+    <link rel="shortcut icon" href="img/icon-website.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
         <div data-include="header__content.partial.html"></div>
+        <div class="header__contacts contacts-head">
+            <h1 class="contacts-head__title">Contacts</h1>
+            <p class="contacts-head__row">Order our services now! <a href="#">+ 1 (234) 567 89 00</a></p>
+        </div>
     </header>
     <main>
-        <section class="hat">
-            <div class="hat__content">
-                <h1>Contacts</h1>
-                <p>Order our services now! <a href="#">+ 1 (234) 567 89 00</a></p>
-            </div>
-        </section>
-        <section>
-            <div class="questions">
-                <h2 class="questions__title">Still Have Question?</h2>
-                <p class="questions__text">Perhaps you'll find an answer to your question here.</p>
-                <ul>
-                <div class="accordion">
-                    <li>
-                    <div class="accordion__item">
-                        <button class="accordion__button">What services do your provide?</button>
-                        <div class="accordion__content">
-                            <p>We offer all services related to pet care. These include grooming, training, dog walking, pet sitting, pet hotel, etc.</p>
+        <section class="contacts-help-section">
+            <div class="contacts-help-section__faq contacts-faq">
+                <h2 class="contacts-faq__title">Still Have Question?</h2>
+                <p class="contacts-faq__row">Perhaps you'll find an answer to your question here.</p>
+                <div class="contacts-faq__contacts-accordion contacts-accordion">
+                    <div class="contacts-accordion__item">
+                        <button class="contacts-accordion__button">What services do your provide?</button>
+                        <div class="contacts-accordion__content">
+                            <p>We offer all services related to pet care. These include grooming, training, dog
+                                walking, pet sitting, pet hotel, etc.</p>
                         </div>
-                        </div>
-                    </li>
-                    <li>
-                    <div class="accordion__item">
-                        <button class="accordion__button">Do you have a professional vet?</button>
-                        <div class="accordion__content">
-                            <p>Yes, we have 3 vets that specialize in different pets, from cats to parrots and exotic animals. Still, we're not a vet clinic, so our vets provide only consultations and do not perform any procedures.</p>
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                    <div class="accordion__item">
-                        <button class="accordion__button">What does a pet sitter do?</button>
-                        <div class="accordion__content">
-                            <p>A pet sitter is a person that looks after your pets when you're out. It includes feeding, washing, providing walks and exercises, etc.</p>
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                    <div class="accordion__item">
-                        <button class="accordion__button">Can I leave my pet at your place?</button>
-                        <div class="accordion__content">
-                            <p>Yes, you travel with peace of mind. We have a mini-hotel for all kinds of pets. It is spacious, comfortable, and fully equipped.</p>
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                    <div class="accordion__item">
-                    <button class="accordion__button">Can I order one-time pet sitting services?</button>
-                    <div class="accordion__content">
-                        <p>Sure, if you need a pet sitter just once, you can order such a service. Also, you can request a pet sitter for 1-2 hours and decide whether you want to use our services later.</p>
                     </div>
+                    <div class="contacts-accordion__item">
+                        <button class="contacts-accordion__button">Do you have a professional vet?</button>
+                        <div class="contacts-accordion__content">
+                            <p>Yes, we have 3 vets that specialize in different pets, from cats to parrots and
+                                exotic animals. Still, we're not a vet clinic, so our vets provide only
+                                consultations and do not perform any procedures.</p>
+                        </div>
                     </div>
-                    </li>
+                    <div class="contacts-accordion__item">
+                        <button class="contacts-accordion__button">What does a pet sitter do?</button>
+                        <div class="contacts-accordion__content">
+                            <p>A pet sitter is a person that looks after your pets when you're out. It includes
+                                feeding, washing, providing walks and exercises, etc.</p>
+                        </div>
+                    </div>
+                    <div class="contacts-accordion__item">
+                        <button class="contacts-accordion__button">Can I leave my pet at your place?</button>
+                        <div class="contacts-accordion__content">
+                            <p>Yes, you travel with peace of mind. We have a mini-hotel for all kinds of pets.
+                                It is spacious, comfortable, and fully equipped.</p>
+                        </div>
+                    </div>
+                    <div class="contacts-accordion__item">
+                        <button class="contacts-accordion__button">Can I order one-time pet sitting services?</button>
+                        <div class="contacts-accordion__content">
+                            <p>Sure, if you need a pet sitter just once, you can order such a service. Also, you
+                                can request a pet sitter for 1-2 hours and decide whether you want to use our
+                                services later.</p>
+                        </div>
+                    </div>
                 </div>
-                </ul>
             </div>
-            <div class="form">
+            <div class="contacts-help-section__form contacts-form">
                 <form action="#" method="post">
-                    <div class="form_field">
-                    <input class="form__input" id="full-name" type="text" placeholder="Enter your full name*" required name="full-name">
+                    <div class="contacts-form__field">
+                        <input class="contacts-form__input" type="text" placeholder="Enter your full name*" required
+                            name="full-name">
                     </div>
-                    <div class="form_field">
-                        <input class="form__input" id="phone-number" type="tel" placeholder="Enter your phone number*" required name="phone-number">
+                    <div class="contacts-form__field">
+                        <input class="contacts-form__input" type="tel" placeholder="Enter your phone number*" required
+                            name="phone-number">
                     </div>
-                    <div class="form_field">
-                        <input  class="form__input" id="pet-info" type="text" placeholder="Pet's name and age*" required name="pet-info">
+                    <div class="contacts-form__field">
+                        <input class="contacts-form__input" type="text" placeholder="Pet's name and age*" required
+                            name="pet-info">
                     </div>
-                    <div class="form_field">
-                        <input class="form__input" type="text" placeholder="Service*" required name="service">
+                    <div class="contacts-form__field">
+                        <input class="contacts-form__input" type="text" placeholder="Service*" required name="service">
                     </div>
-                    <div class="form_field">
-                        <input type="date" placeholder="Choose date" name="form_date">
+                    <div class="contacts-form__field">
+                        <input class="contacts-form__input" type="date" name="form-date">
                     </div>
-                    <div class="form_button">
+                    <div class="contacts-form_button">
                         <button type="submit">Request a quote</button>
                     </div>
                 </form>
             </div>
         </section>
+        <section class="contacts-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.384485581208!2d-73.7971666816198!3d40.77300883261712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28a87366ccda9%3A0xd5d49f81c24f6ad9!2sThe%20Pet%20Doctor%20of%20Flushing!5e0!3m2!1sen!2sua!4v1701937702644!5m2!1sen!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacts-map__contact-info contact-info">
+                <h3 class="contact-info__title">Contacts</h3>
+                <p class="contact-info__row">2562 Francis Lewis Blvd, Flushing, NY 11358</p>
+                <p class="contact-info__row">Mon - Sat: 11 AM - 9 PM</p>
+                <p class="contact-info__row">Sun: 11 AM - 7 PM</p>
+                <a class="contact-info__email-link" href="#">bestpet@email.com</a>
+                <a class="contact-info__number-link" href="#">+ 1 (234) 567 89 00</a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
