@@ -1,20 +1,21 @@
 @import url(globals.css);
 @import url(header.css);
 
-/* Title section */
-
 .container {
     background-color: var(--background-color); 
 }
 
-.title {
+/* MAIN */
+/* Title section */
+
+.vet-consultations {
     display: flex;
     justify-content: center;
-    background-color: rgb(251, 241, 231);
+    background-color: var(--background-saturated-color);
     padding: 40px 0;
 }
 
-.title__container {
+.vet-consultations__container {
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -24,22 +25,22 @@
     margin: 0 44px;
 }
 
-.title__container h1 {
-    color: rgb(255, 91, 46);
+.vet-consultations__container h1 {
+    color: var(--bright-text-color);
     font-size: 42px;
     line-height: 54.6px;
 }
 
-.title__container p {
-    color: rgb(4, 15, 115);
+.vet-consultations__container p {
+    color: var(--title-text-color);
     font-family: "Poppins Medium";
     font-size: 15px;
     line-height: 20px;
     padding: 0 15px;
 }
 
-.title__container p a {
-    color: rgb(255, 91, 46);
+.vet-consultations__container p a {
+    color: var(--bright-text-color);
 }
 
 /* Consultations section */
@@ -48,7 +49,6 @@
     display: flex;
     justify-content: center;
     padding: 120px 0 55px;
-    background-color: #fff6ed;
 }
 
 .consultations__container {
@@ -64,18 +64,13 @@
     margin-bottom: 60px;
 }
 
-.consultations__img img {
-    height: 100%;
-    width: 100%;
-}
-
-.consultations__title {
+.consultations__description {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.consultations__title div {
+.consultations__description div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,36 +80,36 @@
     margin-bottom: 50px;
 }
 
-.consultations__title-leftblock h2 {
-    color: rgb(4, 15, 115);
+.consultations__description-left-item h2 {
+    color: var(--title-text-color);
     font-size: 38px;
     line-height: 45.6px;
 }
 
-.consultations__title-leftblock h3 {
-    color: rgb(106, 110, 143);
+.consultations__description-left-item h3 {
+    color: var(--paragraph-text-color);
     font-family: "Poppins Medium";
     font-weight: normal;
     font-size: 19px;
     line-height: 28.5px;
 }
 
-.consultations__title-leftblock p,
-.consultations__title-rightblock p {
-    color: rgb(106, 110, 143);
+.consultations__description-left-item p,
+.consultations__description-right-item p {
+    color: var(--paragraph-text-color);
     font-size: 17px;
     line-height: 25.5px;
 }
 
-.consultations__title-rightblock ul {
-    color: rgb(66, 72, 117);
+.consultations__description-right-item ul {
+    color: var(--subtitle-text-color);
     font-size: 17px;
     line-height: 25.5px;
     list-style-type: none;
     padding: 0;
 }
 
-.consultations__title-rightblock li {
+.consultations__description-right-item li {
     padding-left: 30px; 
     background-image: url("../img/icon-for-li.svg");
     background-size: 20px 24px;
@@ -122,7 +117,7 @@
     background-repeat: no-repeat;
 }
 
-.consultations__title-rightblock li:not(:last-of-type) {
+.consultations__description-right-item li:not(:last-of-type) {
     margin-bottom: 16px;
 }
 
@@ -133,7 +128,7 @@
     height: 153px;
     max-width: 1200px;
     padding: 0 15px;
-    color: rgb(106, 110, 143);
+    color: var(--paragraph-text-color);
     font-size: 17px;
     line-height: 25.5px;
 }
