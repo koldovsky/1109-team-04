@@ -7,6 +7,10 @@ h3 {
 
 /* Title section */
 
+.container {
+    background-color: var(--background-color); 
+}
+
 .services {
     display: flex;
     justify-content: center;

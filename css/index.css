@@ -1,3 +1,7 @@
 @import url(globals.css);
 @import url(services-carousel.css);
 @import url(header.css);
+
+.container {
+    background-color: var(--background-color); 
+}

@@ -3,6 +3,10 @@
 
 /* Title section */
 
+.container {
+    background-color: var(--background-color); 
+}
+
 .title {
     display: flex;
     justify-content: center;
