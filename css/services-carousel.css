@@ -29,3 +29,18 @@
   .services-carousel__img {
    width: 360px;
 }  
+.services-carousel__items{
+  display: flex;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-carousel__item{
+  max-width: 360px;
+  padding: auto 16px ;
+}
+.services-carousel{
+  padding: 15px;
+  margin: auto 0;
+}
