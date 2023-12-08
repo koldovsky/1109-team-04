@@ -1,6 +1,7 @@
 @import url(globals.css);
 @import url(services-carousel.css);
 @import url(header.css);
+@import url(meet_our_team.css);
 
 .container {
     background-color: var(--background-color); 

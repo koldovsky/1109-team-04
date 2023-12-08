@@ -1,20 +1,17 @@
 @import url(globals.css);
 @import url(header.css);
 
-h3 {
-    font-family: "Rubik SemiBold";
-}
-
-/* Title section */
-
 .container {
     background-color: var(--background-color); 
 }
 
+/* MAIN */
+/* Title section */
+
 .services {
     display: flex;
     justify-content: center;
-    background-color: rgb(251, 241, 231);
+    background-color: var(--background-saturated-color);
     padding: 40px 0;
 }
 
@@ -29,13 +26,13 @@ h3 {
 }
 
 .services__title h1 {
-    color: rgb(255, 91, 46);
+    color: var(--bright-text-color);
     font-size: 42px;
     line-height: 54.6px;
 }
 
 .services__title p {
-    color: rgb(4, 15, 115);
+    color: var(--title-text-color);
     font-family: "Poppins Medium";
     font-size: 15px;
     line-height: 20px;
@@ -43,45 +40,50 @@ h3 {
 }
 
 .services__title p a {
-    color: rgb(255, 91, 46);
+    color: var(--bright-text-color);
 }
 
-/* Block section */
+/* Items section */
 
-.ourservices {
+.our-services {
     display: flex;
     justify-content: center;
     padding: 110px 0 60px;
-    background-color: #fff6ed;
 }
 
-.ourservices__container {
+.our-services__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 44px;
 }
 
-.ourservices__title {
+.our-services__title {
     text-align: center;
 }
 
-.ourservices__title h2 {
-    color: rgb(4, 15, 115);
+.our-services__title h2 {
+    color: var(--title-text-color);
     font-size: 42px;
     line-height: 54.6px;
     margin-bottom: 30px;
 }
 
-.ourservices__title p {
-    color: rgb(66, 72, 117);
+.our-services__title p {
+    color: var(--subtitle-text-color);
     font-family: "Poppins Medium";
     font-size: 19px;
     line-height: 28.5px;
     margin-bottom: 40px;
 }
 
-.ourservices__block {
+.our-services__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-services__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,55 +94,55 @@ h3 {
     flex-direction: row-reverse;
 }
 
-.ourservices__img,
-.ourservices__text {
+.our-services__img,
+.our-services__text {
     height: 488.31px;
     width: 585px;
 }
 
-.ourservices__img img {
+.our-services__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.ourservices__text {
+.our-services__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(251, 241, 231);
+    background-color: var(--background-saturated-color);
     padding: 60px 70px;
 }
 
-.ourservices__text-price {
-    color: rgb(255, 91, 46);
+.our-services__text-price {
+    color: var(--bright-text-color);
     font-family: "Poppins SemiBold";
     font-size: 13px;
     line-height: 18.5705px;
 }
 
-.ourservices__text-title {
-    color: rgb(4, 15, 115);
+.our-services__text-title {
+    color: var(--title-text-color);
     font-family: "Rubik SemiBold";
     font-size: 24px;
     line-height: 34.284px;
 }
 
-.ourservices__text-description {
-    color: rgb(106, 110, 143);
+.our-services__text-description {
+    color: var(--paragraph-text-color);
     font-size: 17px;
     line-height: 25.5px;
 }
 
-.ourservices__text-list {
-    color: rgb(66, 72, 117);
+.our-services__text-list {
+    color: var(--subtitle-text-color);
     font-size: 17px;
     line-height: 25.5px;
     list-style-type: none;
     padding: 0;
 }
 
-.ourservices__text-list li {
+.our-services__text-list li {
     padding-left: 30px; 
     background-image: url("../img/icon-for-li.svg");
     background-size: 20px 24px;
@@ -148,16 +150,16 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.ourservices__text-list li:not(:last-of-type) {
+.our-services__text-list li:not(:last-of-type) {
     margin-bottom: 16px;
 }
 
-.ourservices__text-button {
+.our-services__text-button {
     display: inline-block;
     padding: 16px 28px;
     text-decoration: none;
-    background-color: rgb(255, 91, 46);
-    color: rgb(255, 255, 255);
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
     border-radius: 25px;
     border: none;
     font-family: "Poppins Bold";
@@ -166,10 +168,10 @@ h3 {
     width: 143.56px; 
 }
 
-.ourservices__text-button:hover {
-    background-color: rgb(66, 72, 117);
+.our-services__text-button:hover {
+    background-color: var(--button-hover-color);
 }
 
-.ourservices__text-button:active {
-    background-color: rgb(255, 91, 46);
+.our-services__text-button:active {
+    background-color: var(--button-background-color);
 }
