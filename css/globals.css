@@ -51,6 +51,7 @@
     --button-background-light-color: rgb(251, 237, 223);
     --button-text-color: rgb(255, 255, 255);
     --button-text-dark-color: rgb(4, 15, 115);
+    --button-hover-color: rgb(66, 72, 117);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }
