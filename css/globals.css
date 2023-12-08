@@ -41,6 +41,15 @@
 }
 
 :root {
+    --background-color: rgb(255, 246, 237);
+    --saturated-background-color: rgb(251, 241, 231);
+    --title-text-color: rgb(4, 15, 115);
+    --subtitle-text-color: rgb(66, 72, 117);
+    --link-text-color: rgb(45, 53, 121);
+    --paragraph-text-color: rgb(106, 110, 143);
+    --bright-text-color: rgb(255, 91, 46);
+    --light-button-color: rgb(251, 237, 223);
+    --button-color: rgb(255, 91, 46);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }
