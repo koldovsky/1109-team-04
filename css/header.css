@@ -1,9 +1,15 @@
 .header {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__background-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
+    background-image: url(../img/header-background-image.png);
+    background-size: cover;
+    height: 775px;
+    background-position: 44.7% center;
 }
 
 .header__top {
