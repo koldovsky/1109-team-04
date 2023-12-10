@@ -1,15 +1,22 @@
-.header {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header__background-wrapper {
-    display: flex;
-    flex-direction: column;
+.header__background {
     background-image: url(../img/header-background-image.png);
     background-size: cover;
-    height: 775px;
-    background-position: 44.7% center;
+}
+
+.header__text {
+    color: rgb(4, 15, 115);
+}
+
+.header__paragraph {
+    font-family: 'Poppins Medium';
+    color: rgb(66, 72, 117);
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header__top {
@@ -20,7 +27,7 @@
 }
 
 .header__top-logo {
-    width: 168px;
+    max-width: 168px;
 }
 
 .nav__list {
@@ -53,8 +60,82 @@
     height: 32px;
 }
 
-.icon {
-    width: 28px;
-    height: 28px;
+.header__buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Poppins Bold"
 }
 
+.header__buttons-services {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ff5b2e;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15.4px;
+    line-height: 18.48px;
+    color: #fff;
+    padding: 13px 28px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.header__buttons-call-us {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(45, 53, 121);
+    margin-left: 10px;
+    gap: 7px;
+}
+
+.icon--buttons {
+    height: 24px;
+    width: 24px;
+}
+
+@media (min-width: 768px) {
+    .header__background {
+        height: 761px;
+        background-position: 40.9% center;
+    }
+
+    .header__title {
+        font-size: 62px;
+        line-height: 68.2px;
+        max-width: 540px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .header__background {
+        min-height: 775px;
+        background-position: 41% center;
+    }
+
+    .header__bottom {
+        padding: 210px 15px 175px;
+    }
+
+    .header__title {
+        font-size: 62px;
+        line-height: 68.2px;
+        max-width: 570px;
+        margin-bottom: 40px;
+    }
+
+    .header__paragraph {
+        font-size: 19px;
+        line-height: 28.5px;
+        margin-bottom: 55px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+}
