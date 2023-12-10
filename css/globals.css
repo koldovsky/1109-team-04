@@ -33,6 +33,11 @@
     src: url(../fonts/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: "Rubik Light";
+    src: url(../fonts/Rubik-Light.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
