@@ -1,3 +1,8 @@
+.team {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .team__info {
     text-align: center;
 }
