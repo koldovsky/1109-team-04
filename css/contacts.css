@@ -1,1 +1,104 @@
 @import url(globals.css);
+@import url(header.css);
+
+.contacts-help-section {
+    background-color: var(--background-color);
+}
+
+/* Main section 
+            Head     */
+
+.contacts-head {
+    background-color: var(--background-saturated-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacts-head__title {
+    color: var(--bright-text-color);
+    font-size: 38px;
+    padding-left: 40px;
+}
+
+.contacts-head__row {
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-family: "Poppins Medium", sans-serif;
+    padding-right: 40px;
+}
+
+.contacts-head__row a {
+    color: var(--bright-text-color);
+    font-size: 14px;
+    font-family: "Poppins Medium", sans-serif;
+}
+
+/*Main section
+      body    */
+
+.contacts-help-section {
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 105px 0;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+/*Contacts-FAQ section*/
+
+.contacts-help-section__faq {
+    flex-basis: 50%;
+    max-width: 50%;
+    background-color: var(--background-color);
+    padding: 0 15px;
+    text-align: left;
+}
+
+.contacts-faq__text h2 {
+    font-family: "Rubik Bold", sans-serif;
+    color: var(--title-text-color);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49.4px;
+}
+
+.contacts-faq__text p {
+    font-family: "Poppins Medium", sans-serif;
+    font-size: 19px;
+    color: var(--subtitle-text-color);
+    line-height: 28.5px;
+}
+
+.contacts-accordion__button{
+    font-family: "Poppins Medium", sans-serif;
+    font-size: 17px;
+    color: var(--subtitle-text-color);
+    font-weight: 700;
+}
+
+.contacts-accordion__content {
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 17px;
+    color: var(--subtitle-text-color);
+    font-weight: 400;
+}
+
+/*Contacts-form section*/
+
+.contacts-help-section__form {
+    flex-basis: 50%;
+    max-width: 50%;
+    background-color: var(--button-text-color);
+    text-align: center;
+    padding: 0 15px;
+    border-radius: 5%;
+}
+
+/*Map section*/
+
+.contacts-map iframe{
+    width: 100%;
+}   
