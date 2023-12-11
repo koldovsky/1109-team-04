@@ -13,6 +13,12 @@
     justify-content: space-around;
 }
 
+.team__image {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
 .team__member {
     text-align: center;
     width: 100%; 
