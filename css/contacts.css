@@ -9,11 +9,11 @@
      Head     */
 
 .header {
-    background-color: var(--background-saturated-color);
+    background-color: var(--background-color);
 }
 
 .contacts-head {
-    background-color: var(--background-color);
+    background-color: var(--background-saturated-color);
     display: flex;
     justify-content: space-between;
     padding: 40px 0;
