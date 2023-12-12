@@ -1,10 +1,6 @@
 @import url(globals.css);
 @import url(header.css);
 
-.container {
-    background-color: var(--background-color); 
-}
-
 /* MAIN */
 /* Title section */
 

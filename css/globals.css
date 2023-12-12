@@ -71,6 +71,11 @@ h2 {
     font-family: "Rubik Bold";
 }
 
+.container-background {
+    background-color: var(--background-color); 
+}
+
 .container {
-    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: auto;
 }
