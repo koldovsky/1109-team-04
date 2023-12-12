@@ -90,6 +90,10 @@
     height: 32px;
 }
 
+.header__top-icons-link:hover {
+    fill: var(--header-icons-hover-color);
+}
+
 .header__buttons {
     display: flex;
     flex-direction: column;

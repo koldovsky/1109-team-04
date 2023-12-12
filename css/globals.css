@@ -58,6 +58,7 @@
     --button-text-dark-color: rgb(4, 15, 115);
     --button-hover-color: rgb(66, 72, 117);
     --header-navigation-link-color: rgb(106, 110, 143);
+    --header-icons-hover-color: rgb(255,0,0);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }
