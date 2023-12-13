@@ -8,10 +8,6 @@
 /* Main section 
      Header     */
 
-.header {
-    background-color: var(--background-color);
-}
-
 .contacts-head {
     background-color: var(--background-saturated-color);
     padding: 40px 0;
