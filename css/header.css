@@ -1,7 +1,7 @@
 .header__background {
     background-image: url(../img/header-background-image.png);
     background-size: cover;
-    height: 100vh;
+    height: 723px;
     background-position: center;
 }
 
@@ -49,11 +49,11 @@
     max-width: 168px;
 }
 
-.nav {
+.header .nav {
     display: none;
 }
 
-.nav__link {
+.header .nav__link {
     position: relative;
     text-decoration: none;
     color: var(--header-navigation-link-color);
@@ -61,7 +61,7 @@
     font-size: 15px;
 }
 
-.nav__link:hover {
+.header .nav__link:hover {
     color: var(--bright-text-color);
 }
 
@@ -131,7 +131,7 @@
     text-decoration: underline;
 }
 
-.icon--buttons {
+.header .icon--buttons {
     height: 24px;
     width: 24px;
 }
@@ -236,18 +236,18 @@
         height: 28px;
     }
 
-    .nav {
+    .header .nav {
         display: block;
         margin-right: 20px;
     }
 
-    .nav__list {
+    .header .nav__list {
         list-style: none;
         display: flex;
         gap: 36px;
     }
 
-    .nav__link::after {
+    .header .nav__link::after {
         content: '';
         position: absolute;
         display: block;
@@ -261,7 +261,7 @@
         transform-origin: left;
       }
     
-    .nav__link:hover::after {
+    .header .nav__link:hover::after {
         transform: scale(1);
       }
 }
