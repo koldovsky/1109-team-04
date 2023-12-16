@@ -1,3 +1,6 @@
+@import url(globals.css);
+@import url(header.css);
+
 .faq {
     display: flex;
     justify-content: space-between;
