@@ -2,6 +2,10 @@
 
 const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 
+//Roman Slipak
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
 
 // Make negative https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 
