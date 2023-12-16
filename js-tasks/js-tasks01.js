@@ -31,13 +31,31 @@ function move (position, roll) {
 
 const greet = (name, owner) => (name === owner) ? 'Hello boss' : 'Hello guest';
 
+//Roman Slipak
+function greet (name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
+
 
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
 const litres = time => Math.floor(time * 0.5);
 
+//Roman Slipak
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+
 
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
 const lovefunc = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
+
+//Roman Slipak
+function lovefunc(flower1, flower2){
+  if (flower1 % 2 === 0 && flower2 % 2 !==0 || flower2 % 2 === 0 && flower1 % 2 !==0) {
+    return true;
+  }
+  return false;
+}
 
