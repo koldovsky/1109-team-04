@@ -7,11 +7,11 @@
     padding: 20px;
   }
   
-  .questions {
+  .faq__questions {
     flex: 1;
   }
   
-  .picture {
+  .faq__picture {
     flex: 1;
     margin-left: 20px;
   }
