@@ -1,89 +1,66 @@
 @import url(globals.css);
 @import url(header.css);
 
-.container {
-    background-color: var(--background-color); 
-}
-
 /* MAIN */
 /* Title section */
 
 .vet-consultations {
-    display: flex;
-    justify-content: center;
     background-color: var(--background-saturated-color);
     padding: 40px 0;
 }
 
-.vet-consultations__container {
-    width: 1200px;
+.vet-consultations__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 15px;
-    margin: 0 44px;
+    padding: 0 24px;
 }
 
-.vet-consultations__container h1 {
+.vet-consultations__title h1 {
     color: var(--bright-text-color);
-    font-size: 42px;
-    line-height: 54.6px;
+    font-size: 28px;
+    line-height: 36.4px;
+    padding-right: 20px;
 }
 
-.vet-consultations__container p {
+.vet-consultations__title p {
     color: var(--title-text-color);
     font-family: "Poppins Medium";
-    font-size: 15px;
-    line-height: 20px;
-    padding: 0 15px;
+    font-size: 14px;
+    line-height: 18.6662px;
+    margin-top: 50px;
 }
 
-.vet-consultations__container p a {
+.vet-consultations__title p a {
     color: var(--bright-text-color);
 }
 
 /* Consultations section */
 
 .consultations {
-    display: flex;
-    justify-content: center;
-    padding: 120px 0 55px;
-}
-
-.consultations__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 44px;
+    padding: 90px 0 55px;
 }
 
 .consultations__img {
-    max-width: 1200px;
-    padding: 0 15px;
     margin-bottom: 60px;
+    padding: 0 24px;
 }
 
 .consultations__description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 24px;
 }
 
 .consultations__description div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 322.69px;
-    max-width: 600px;
-    padding: 0 15px;
     margin-bottom: 50px;
 }
 
 .consultations__description-left-item h2 {
     color: var(--title-text-color);
-    font-size: 38px;
-    line-height: 45.6px;
+    font-size: 30px;
+    line-height: 36px;
 }
 
 .consultations__description-left-item h3 {
@@ -113,22 +90,129 @@
     padding-left: 30px; 
     background-image: url("../img/icon-for-li.svg");
     background-size: 20px 24px;
-    background-position: left center;
+    background-position: left top;
     background-repeat: no-repeat;
+}
+
+.consultations__text {
+    padding: 0 24px;
+    color: var(--paragraph-text-color);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+.consultations__description-left-item h2,
+.consultations__description-left-item h3,
+.consultations__description-left-item p:first-of-type,
+.consultations__description-right-item p,
+.consultations__text p:first-of-type {
+    margin-bottom: 20px;
 }
 
 .consultations__description-right-item li:not(:last-of-type) {
     margin-bottom: 16px;
 }
 
-.consultations__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 153px;
-    max-width: 1200px;
-    padding: 0 15px;
-    color: var(--paragraph-text-color);
-    font-size: 17px;
-    line-height: 25.5px;
+/* MEDIA */
+
+@media (min-width: 623px) {
+
+    .vet-consultations__title p {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .vet-consultations__title,
+    .consultations__img,
+    .consultations__description,
+    .consultations__text {
+        padding: 0 32px;
+    }
+
+    .vet-consultations__title h1 {
+        font-size: 38px;
+        line-height: 49.4px;
+    }
+
+    .consultations {
+        padding: 105px 0 55px;
+    }
+
+    .consultations__description {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .consultations__description-left-item h2 {
+        font-size: 34px;
+        line-height: 40.8px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .vet-consultations__title,
+    .consultations__img,
+    .consultations__description,
+    .consultations__text {
+        padding: 0 40px;
+    }
+
+    .vet-consultations__title h1 {
+        font-size: 42px;
+        line-height: 54.6px;
+    }
+    
+    .vet-consultations__title p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .consultations {
+        padding: 120px 0 55px;
+    }
+
+    .consultations__description-left-item h2 {
+        font-size: 38px;
+        line-height: 45.6px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .vet-consultations__title,
+    .consultations__img,
+    .consultations__description,
+    .consultations__text {
+        padding: 0 15px;
+    }
+
+    .vet-consultations__title p {
+        padding-right: 30px;
+    }
+
+    .consultations__description div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 322.69px;
+
+    }
+
+    .consultations__description-left-item h2,
+    .consultations__description-left-item h3,
+    .consultations__description-left-item p:first-of-type,
+    .consultations__description-right-item p,
+    .consultations__text p:first-of-type {
+        margin-bottom: 0;
+    }
+    
+    .consultations__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 153px;
+    }
 }
