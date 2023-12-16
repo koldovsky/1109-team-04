@@ -21,6 +21,11 @@ function makeNegative(num) {
 
 const move = (position, roll) => roll * 2 + position;
 
+//Roman Slipak
+function move (position, roll) {
+  return position + (roll * 2);
+}
+
 
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
