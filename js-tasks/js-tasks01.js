@@ -13,7 +13,7 @@ const makeNegative = num => (num > 0) ? -num : num;
 
 //Roman Slipak
 function makeNegative(num) {
-  return num > 0 ? num - (num * 2) : num;
+  return num > 0 ? num * (-1) : num;
 }
 
 
