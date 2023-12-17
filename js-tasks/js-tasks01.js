@@ -1,5 +1,6 @@
 // Messi Goals https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 
+//Sviatoslav Nadorozhnyi
 const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 
 //Daryna Riabova 
@@ -22,6 +23,7 @@ function goals (laLiga, copaDelRey, championsLeague){
 
 // Make negative https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 
+//Sviatoslav Nadorozhnyi
 const makeNegative = num => (num > 0) ? -num : num;
 
 //Daryna Riabova 
@@ -43,6 +45,7 @@ function makeNegative(num) {
 
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 
+//Sviatoslav Nadorozhnyi
 const move = (position, roll) => roll * 2 + position;
 
 //Daryna Riabova 
@@ -62,6 +65,7 @@ function move (position, roll) {
 
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
+//Sviatoslav Nadorozhnyi
 const greet = (name, owner) => (name === owner) ? 'Hello boss' : 'Hello guest';
 
 //Daryna Riabova 
@@ -84,6 +88,7 @@ function greet (name, owner) {
 
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
+//Sviatoslav Nadorozhnyi
 const litres = time => Math.floor(time * 0.5);
 
 //Daryna Riabova 
@@ -103,6 +108,7 @@ function litres(time) {
 
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
+//Sviatoslav Nadorozhnyi
 const lovefunc = (flower1, flower2) => (flower1 + flower2) % 2 === 1;
 
 //Daryna Riabova
