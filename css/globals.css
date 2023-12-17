@@ -37,14 +37,19 @@ h2 {
     font-family: "Rubik Bold";
 }
 
-.container-background {
-    background-color: var(--background-color); 
-}
 
-.container {
+body{
+    max-width: 1200px;
+    margin: auto; 
+    background-color: var(--background-color);
+}
+/*.container {
     max-width: 1200px;
     margin: auto;
 }
+.container-background {
+    background-color: var(--background-color); 
+}*/
 
 .fixed {
     position: fixed;
