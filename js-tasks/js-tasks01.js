@@ -21,6 +21,9 @@ function goals (laLiga, copaDelRey, championsLeague){
     return laLiga+copaDelRey+championsLeague;
 }
 
+//Vitalii Muzyka
+const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+
 // Make negative https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 
 //Sviatoslav Nadorozhnyi
@@ -43,6 +46,9 @@ function makeNegative(num) {
   return num
 }
 
+//Vitalii Muzyka
+const makeNegative = (num) => (num > 0) ? -num: num;
+
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 
 //Sviatoslav Nadorozhnyi
@@ -62,6 +68,9 @@ function move (position, roll) {
 function move (position, roll) {
   return position+roll*2;
 }
+
+//Vitalii Muzyka
+const move = (position, roll) => position + roll + roll;
 
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
@@ -86,6 +95,9 @@ function greet (name, owner) {
   return 'Hello guest';
 }
 
+//Vitalii Muzyka
+const greet = (name, owner) => (name === owner) ? 'Hello boss': 'Hello guest';
+
 // Keep Hydrated https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
 //Sviatoslav Nadorozhnyi
@@ -105,6 +117,9 @@ function litres(time) {
 function litres(time) {
   return Math.floor(time*0.5);
 }
+
+//Vitalii Muzyka
+const litres = time => Math.floor(time * 0.5);
 
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
@@ -128,3 +143,6 @@ function lovefunc(flower1, flower2){
 function lovefunc(flower1, flower2){
   return (flower1+flower2)%2!==0;
 }
+
+//Vitalii Muzyka
+const lovefunc = (flower1, flower2) => (flower1 + flower2) % 2 !== 0;
