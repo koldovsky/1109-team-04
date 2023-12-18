@@ -42,3 +42,7 @@
   .faq-accordion__content p {
     margin: 0;
   }
+
+  .faq-picture {
+    width: 390px;
+  }
