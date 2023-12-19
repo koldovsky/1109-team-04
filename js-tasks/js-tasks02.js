@@ -53,3 +53,27 @@ function warnTheSheep(queue) {
   }
   return wolfPosition === 1 ? "Pls go away and stop eating my sheep" : "Oi! Sheep number "+ (wolfPosition - 1) +"! You are about to be eaten by a wolf!"
 }
+
+// "Beginner - Lost Without a Map" https://www.codewars.com/kata/beginner-lost-without-a-map
+
+//Roman Slipak
+function maps(x){
+  const doubledXArray = [];
+  for(let i = 0;i < x.length;i++){
+    doubledXArray[i] = x[i] * 2;
+  }
+  return doubledXArray;
+}
+
+// "Find the first non-consecutive number" https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+//Roman Slipak
+function firstNonConsecutive (arr) {
+  for(let i = 0;i < arr.length - 1;i++) {
+    if(arr[i + 1] - arr[i] !== 1) {
+      return arr[i + 1];
+    }
+  }
+  return null;
+}
+
