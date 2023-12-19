@@ -77,3 +77,14 @@ function firstNonConsecutive (arr) {
   return null;
 }
 
+// "You Can't Code Under Pressure #1" https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+
+//Roman Slipak
+const doubleInteger = (i) => i * 2;
+
+// "Century From Year" https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
+
+//Roman Slipak
+function century(year) {
+  return Math.ceil(year / 100);
+ }
