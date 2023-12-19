@@ -106,7 +106,10 @@ function maps(x){
   }
   return doubledXArray;
 }
-
+//Daryna Riabova 
+function maps(x) {
+  return x.map(n => n * 2);
+}
 //Sviatoslav Nadorozhnyi
 function maps(x) {
   const result = x.map(value => value * 2);
