@@ -18,6 +18,14 @@ function DNAtoRNA(dna) {
   }
   return structure.join("");
 }
+//Daryna Riabova
+function DNAtoRNA(dna) {
+  let rna = "";
+  for (let i = 0; i < dna.length; i++) {
+   dna[i] === "T" ? rna += "U" : rna += dna[i];  
+  } return rna;  
+}
+  
 
 //Sviatoslav Nadorozhnyi
 const DNAtoRNA = dna => dna.replace(/T/g, "U");
