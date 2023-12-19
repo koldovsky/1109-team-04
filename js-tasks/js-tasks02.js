@@ -38,3 +38,18 @@ function min(arr, toReturn) {
   const minNumber = Math.min(...arr);
   return toReturn === "value" ? minNumber : arr.indexOf(minNumber);
 }
+
+//"A wolf in sheep's clothing" https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+
+//Roman Slipak
+function warnTheSheep(queue) {
+  let wolfPosition = 0;
+  let countQueue = queue.length;
+  for(let i = 0;i < queue.length;i++) {
+    if(queue[i] === "wolf") {
+     wolfPosition = countQueue;
+    }
+    countQueue--;
+  }
+  return wolfPosition === 1 ? "Pls go away and stop eating my sheep" : "Oi! Sheep number "+ (wolfPosition - 1) +"! You are about to be eaten by a wolf!"
+}
