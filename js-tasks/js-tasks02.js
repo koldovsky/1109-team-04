@@ -163,15 +163,19 @@ const makeNegative = num => (num > 0) ? -num : num;
 
 // "Cockroach speed" https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6/train/javascript
 
+//Sviatoslav Nadorozhnyi
+const cockroachSpeed = s => Math.floor(s * 27.777777777778);
+
 //Roman Slipak
 const cockroachSpeed = (s) => Math.floor(s * 100000 / 3600);
 
-//Sviatoslav Nadorozhnyi
-const cockroachSpeed = s => Math.floor(s * 27.777777777778);
 
 // "Angle of triangle" https://www.codewars.com/kata/5a023c426975981341000014/train/javascript
 
 //Sviatoslav Nadorozhnyi
+const otherAngle = (a, b) => 180 - (a + b);
+
+//Roman Slipak
 const otherAngle = (a, b) => 180 - (a + b);
 
 // "Twice as old" https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
