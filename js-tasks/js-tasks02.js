@@ -218,4 +218,4 @@ const past = (h, m, s) => (h * 3600 + m * 60 + s) * 1000;
 const isDivisible = (n, x, y) => Number.isInteger(n / x) && Number.isInteger(n / y);
 
 //Roman Slipak 
-const isDivisible = (n, x, y) => n % x + n % y === 0 ? true : false; 
+const isDivisible = (n, x, y) => n % x + n % y === 0;
