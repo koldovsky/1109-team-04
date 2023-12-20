@@ -62,6 +62,17 @@ const compare = (a,b) => a - b;
 const min = list => Math.min(...list);
 const max = list => Math.max(...list);
 
+//Vitalii Muzyka
+const min = function(list){
+  list.sort((a, b) => a - b);
+  return list[0];
+}
+
+const max = function(list){
+  list.sort((a, b) => b - a);
+  return list[0];
+}
+
 // "Smallest value of an array" https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
 //Roman Slipak
