@@ -193,6 +193,17 @@ const nthEven = n => n * 2 - 2;
 //Sviatoslav Nadorozhnyi
 const getRealFloor = n => n > 13 ? n - 2 : n > 0 ? n - 1 : n;
 
+//Roman Slipak 
+function getRealFloor(n) {
+  if (n <= 0) {
+    return n;
+  } else if (n < 13) {
+    return n - 1;
+  } else {
+    return n - 2;
+  }
+}
+
 // "Clock" https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 
 //Sviatoslav Nadorozhnyi
