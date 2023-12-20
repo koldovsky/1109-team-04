@@ -6,6 +6,9 @@ const stringToArray = (string) => string.split(" ");
 //Sviatoslav Nadorozhnyi
 const stringToArray = string => string.split(" ");
 
+//Vitalii Muzyka
+const stringToArray = string => string.split(" ");
+
 // "DNA to RNA Conversion" https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 //Roman Slipak
@@ -26,9 +29,19 @@ function DNAtoRNA(dna) {
   } return rna;  
 }
   
-
 //Sviatoslav Nadorozhnyi
 const DNAtoRNA = dna => dna.replace(/T/g, "U");
+
+//Vitalii Muzyka
+function DNAtoRNA(dna) {
+  const rna = dna.split("");
+  for (let i = 0; i < rna.length; i++) {
+      if (rna[i] === "T") {
+          rna[i] = "U";
+      }
+  }
+  return rna.join("");
+}
 
 // "Find Maximum and Minimum" Values of a List https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
