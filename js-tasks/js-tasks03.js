@@ -6,6 +6,11 @@ class SmallestIntegerFinder {
     return Math.min(...args);
   }
 }
+
+//Roman Slipak
+class SmallestIntegerFinder {
+  findSmallestInt = (args) => Math.min(...args);
+}
   
 // "Geometry Basics: Circle Circumference in 2D" https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 
@@ -26,4 +31,14 @@ function giveMeFive(obj){
     }
   }
   return arr;
+}
+
+//Roman Slipak
+function giveMeFive(obj){
+  const fiveLengthKeyAndValueArray = [];
+  for(const element in obj) {
+    if(element.length === 5) fiveLengthKeyAndValueArray.push(element);
+    if(typeof(obj[element]) === "string" && obj[element].length === 5) fiveLengthKeyAndValueArray.push(obj[element]);
+  }
+  return fiveLengthKeyAndValueArray;
 }
