@@ -2,9 +2,9 @@
 
 // Vitalii Muzyka
 class SmallestIntegerFinder {
-    findSmallestInt(args) {
-        return Math.min(...args);
-    }
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
 }
   
 // "Geometry Basics: Circle Circumference in 2D" https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
@@ -16,14 +16,14 @@ const circleCircumference = (circle) => 2 * Math.PI * circle.radius;
 
 // Vitalii Muzyka
 function giveMeFive(obj){
-    const arr = [];
-    for (const key in obj) {
-        if (key.length === 5) {
-            arr.push(key);
-        }
-        if (obj[key].length === 5) {
-          arr.push(obj[key]);
-        }
+  const arr = [];
+  for (const key in obj) {
+    if (key.length === 5) {
+        arr.push(key);
     }
-    return arr;
+    if (obj[key].length === 5) {
+        arr.push(obj[key]);
+    }
+  }
+  return arr;
 }
