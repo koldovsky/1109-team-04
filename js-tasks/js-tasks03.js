@@ -82,13 +82,13 @@ function buildFun(n) {
 
 //Sviatoslav Nadorozhnyi
 function buildFun(n){
-	const res = []
-	for (let i = 0; i <= n; i++){
-		res.push(function(){
-			return i
-		});
-	}
-	return res
+  const res = []
+  for (let i = 0; i <= n; i++){
+    res.push(function(){
+      return i
+    });
+  }
+  return res
 }
 
 // "Fun with ES6 Classes #2 - Animals and Inheritance" https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
