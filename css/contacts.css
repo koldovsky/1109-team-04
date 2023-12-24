@@ -158,19 +158,51 @@ font-weight: 400;
 }
 
 /*Map section*/
+.contacts-map {
+   position: relative;
+}
 
-.contacts-map iframe{
+.contacts-map iframe{ 
     width: 100%;
+    min-height: 860px;
+    position: relative; 
+    z-index: 1; 
 }   
 
 .contact-info {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
     background-color: var(--button-text-color);
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    max-width:min-content;
     min-width: 272px;
     min-height: 324px;
+    border-radius: 5%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.contact-info__title h3{
+    font-family: "Rubik Bold", sans-serif;
+    font-size: 28px;
+    color: var(--title-text-color);
+}
+
+.contact-info__row {
+    font-family: "Poppins Regular";
+    font-size: 17px;
+    color: var(--paragraph-text-color);
+}
+
+.contact-info__row a {
+    text-decoration: none;
+    color: var(--paragraph-text-color);
 }
 
 @media screen and (min-width: 767px) {
@@ -216,6 +248,14 @@ font-weight: 400;
 
     .contacts-form__input {
         width: 197px;
+    }
+
+    .contacts-form__button {
+        width: 197px;
+    }
+
+    .contact-info__title h3 {
+        font-size: 38px;
     }
 }
 
