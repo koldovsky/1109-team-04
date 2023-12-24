@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="shortcut icon" href="img/icon-website.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container-background">
+        <div class = "container"> 
+      <header class="header">
+        <div class="header__wrapper">
+          <div data-include="header__content.partial.html"></div>
+        </div>
+      </header>
+      <main>
+        <section class="services">
+          <div class="services__title container">
+            <h2 class="services__heading">Services</h2>
+            <p class="services__contact">
+              Order our services now!
+              <a href="#" class="services__phone">+ 1 (234) 567 89 00</a>
+            </p>
+          </div>
+        </section>
+        <section class="intro">
+          <img
+            src="img/dogs.png"
+            alt="Two corgis on a yellow background"
+            class="intro__image"
+          />
+          <div class="intro__content">
+            <h1 class="intro__heading">
+              Your Fluffy Friend Is In Our Safe And Caring Hands
+            </h1>
+            <span class="intro__subtitle"
+              >We are a small firm with 15 dedicated employees that provide all
+              kinds of pet care services in New York.</span
+            >
+            <div class="intro__description">
+              <p class="intro__paragraph">
+                We know how much you adore your pet. You can be sure that we
+                care about your family member with all our attention and love
+                for animals. We offer all kinds of pet care services for our
+                clients in New York.
+              </p>
+              <p class="intro__paragraph">
+                Our dedicated team of vets, groomers, pet sitters and other
+                specialists will provide all kinds of services and take care of
+                your pet. We find an approach to every animal. You can rest
+                assured that your fluffy family member will stay healthy and
+                happy.
+              </p>
+            </div>
+            <div class="intro__buttons">
+              <button class="intro__button">Find a sitter</button>
+              <button class="intro__button">Our Services</button>
+            </div>
+          </div>
+        </section>
+        <section data-include="meet_our_team.partial.html"></section>
+      </main>
+      <footer class="footer"></footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+  </body>
+</html>
