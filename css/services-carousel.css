@@ -35,6 +35,7 @@
 .services-carousel__price-item {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
+  font-weight: bold;
   color: var(--bright-text-color);
 }
 
@@ -77,11 +78,11 @@
 }
 
 .services-carousel__button-prev {
-  margin-right: -30px;
+  margin-right: -10px;
 }
 
 .services-carousel__button-next {
-  margin-left: -30px;
+  margin-left: -10px;
 }
 
 .arrow-line {
@@ -133,10 +134,11 @@
 
 @media (min-width: 1024px) {
   .services-carousel__item {
-    max-width: 290px;
+    max-width: 360px;
   }
   .services-carousel__button-prev,
   .services-carousel__button-next {
   background-color: transparent;
 }
+
 }
