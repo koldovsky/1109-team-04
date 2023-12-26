@@ -23,6 +23,7 @@
     --header-navigation-link-color: rgb(106, 110, 143);
     --header-icons-hover-color: rgb(255,0,0);
     --contacts-accordion-content-color: rgb(106, 110, 143);
+    --button-background-color-hover:rgb(247, 229, 213);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }

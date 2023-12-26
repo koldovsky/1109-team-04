@@ -10,23 +10,22 @@
   </head>
   <body>
     <div class="container-background">
-        <div class = "container"> 
       <header class="header">
         <div class="header__wrapper">
           <div data-include="header__content.partial.html"></div>
         </div>
       </header>
       <main>
-        <section class="services">
-          <div class="services__title container">
-            <h2 class="services__heading">Services</h2>
-            <p class="services__contact">
+        <section class="about">
+          <div class="about__title container">
+            <h2 class="about__heading">About Us</h2>
+            <p class="about__contact">
               Order our services now!
-              <a href="#" class="services__phone">+ 1 (234) 567 89 00</a>
+              <a href="#" class="about__phone">+ 1 (234) 567 89 00</a>
             </p>
           </div>
         </section>
-        <section class="intro">
+        <section class="intro container">
           <img
             src="img/dogs.png"
             alt="Two corgis on a yellow background"
@@ -56,15 +55,14 @@
               </p>
             </div>
             <div class="intro__buttons">
-              <button class="intro__button">Find a sitter</button>
-              <button class="intro__button">Our Services</button>
+              <a class="intro__button" href="contacts.html">Find a sitter</a>
+              <a class="services-intro__button" href="services.html">Our Services</a>
             </div>
           </div>
         </section>
-        <section data-include="meet_our_team.partial.html"></section>
+        <section data-include="meet_our_team.partial.html" class="container"></section>
       </main>
       <footer class="footer"></footer>
-      </div>
     </div>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
   </body>
