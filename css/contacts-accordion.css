@@ -1,0 +1,22 @@
+@import url(globals.css);
+
+.contacts-accordion__button {
+    font-family: "Poppins Medium", sans-serif;
+    font-size: 17px;
+    color: var(--subtitle-text-color);
+    font-weight: 700;
+}
+
+.contacts-accordion__content {
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 17px;
+    color: var(--contacts-accordion-content-color);
+    font-weight: 400;
+}
+.contacts-accordion__content-active {
+    display: block;
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 17px;
+    color: var(--contacts-accordion-content-color);
+    font-weight: 400;
+}

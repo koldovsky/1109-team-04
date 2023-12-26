@@ -1,5 +1,6 @@
 @import url(globals.css);
 @import url(header.css);
+@import url(contacts-accordion.css);
 
 .contacts-help-section {
     background-color: var(--background-color);
@@ -10,8 +11,8 @@
 
 
 .header-wrapper {
-    background-color: var(---background-color);
-    padding: 40px 0;
+    background-color: var(--background-color);
+    padding: 0 24px;
 }
 
 .contacts-head {
@@ -81,20 +82,6 @@
     font-family: "Poppins Medium", sans-serif;
     font-size: 19px;
     color: var(--subtitle-text-color);
-}
-
-.contacts-accordion__button{
-    font-family: "Poppins Medium", sans-serif;
-    font-size: 17px;
-    color: var(--subtitle-text-color);
-    font-weight: 700;
-}
-
-.contacts-accordion__content {
-    font-family: "Poppins Regular", sans-serif;
-    font-size: 17px;
-    color: var(--contacts-accordion-content-color);
-    font-weight: 400;
 }
 
 /*Contacts-form section*/
