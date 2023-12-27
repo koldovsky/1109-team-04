@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contacts</title>
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/contacts-accordion.css">
     <link rel="shortcut icon" href="img/icon-website.png" type="image/x-icon">
 </head>
 
@@ -31,44 +32,7 @@
                         <p>Perhaps you'll find an answer to your question here.</p>
                     </div>
                     <div class="contacts-faq__contacts-accordion contacts-accordion">
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">What services do your provide?</button>
-                            <div class="contacts-accordion__content">
-                                <p>We offer all services related to pet care. These include grooming, training, dog
-                                    walking, pet sitting, pet hotel, etc.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">Do you have a professional vet?</button>
-                            <div class="contacts-accordion__content">
-                                <p>Yes, we have 3 vets that specialize in different pets, from cats to parrots and
-                                    exotic animals. Still, we're not a vet clinic, so our vets provide only
-                                    consultations and do not perform any procedures.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">What does a pet sitter do?</button>
-                            <div class="contacts-accordion__content">
-                                <p>A pet sitter is a person that looks after your pets when you're out. It includes
-                                    feeding, washing, providing walks and exercises, etc.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">Can I leave my pet at your place?</button>
-                            <div class="contacts-accordion__content">
-                                <p>Yes, you travel with peace of mind. We have a mini-hotel for all kinds of pets.
-                                    It is spacious, comfortable, and fully equipped.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">Can I order one-time pet sitting
-                                services?</button>
-                            <div class="contacts-accordion__content">
-                                <p>Sure, if you need a pet sitter just once, you can order such a service. Also, you
-                                    can request a pet sitter for 1-2 hours and decide whether you want to use our
-                                    services later.</p>
-                            </div>
-                        </div>
+                        <div data-include="contacts-accordion.partial.html"></div>
                     </div>
                 </div>
                 <div class="contacts-help-section__form-container ">
@@ -91,7 +55,7 @@
                                     name="service">
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="date" name="form-date">
+                                <input class="contacts-form__input" id="contacts-form__input-date" type="date" name="form-date">
                             </div>
                             <div class="contacts-form__field">
                                 <button class="contacts-form__button" type="submit">Request a quote</button>
@@ -130,7 +94,8 @@
 
     </footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script src ="js/contacts.js"></script>
+    <script src="js/contacts-accordion.js"></script>
+    <script src="js/contacts.js"></script>
 </body>
 
 </html>
