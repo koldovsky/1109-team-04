@@ -14,18 +14,28 @@
     font-weight: 700;
 }
 
-.contacts-accordion__content {
+.contacts-accordion__item {
+    overflow: hidden;
+}
+
+.contacts-accordion__item.open .contacts-accordion__line{
+   margin-top: 17px;
+}
+
+.contacts-accordion__description {
     font-family: "Poppins Regular", sans-serif;
     font-size: 17px;
     color: var(--contacts-accordion-content-color);
     font-weight: 400;
+    height: 0;
     transition: all 0.2s linear;
 }
 
-.description {
-    overflow: hidden;
+.contacts-accordion__icon{
+    width: 17px;
 }
 
-.contacts-accordion__plus-icon {
-    width: 17px;
+.contacts-accordion__line{
+    margin-top: 2px; 
+    color: var(--contacts-accordion-content-color);
 }

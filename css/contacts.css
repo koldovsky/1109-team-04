@@ -9,8 +9,11 @@
      Header     */
 
 
-.header-wrapper {
+.header-contacts__background{
     background-color: var(--background-color);
+}
+
+.header-contacts__wrapper {
     padding: 0 24px;
 }
 
@@ -75,12 +78,14 @@
     text-align: left;
     font-size: 28px;
     font-weight: 700;
+    margin: 20px 0;
 }
 
 .contacts-faq__title p {
     font-family: "Poppins Medium", sans-serif;
     font-size: 19px;
     color: var(--subtitle-text-color);
+    margin-bottom: 20px;
 }
 
 /*Contacts-form section*/
@@ -200,6 +205,10 @@ font-weight: 400;
 @media screen and (min-width: 767px) {
 
     /*Header*/
+    .header-contacts__wrapper {
+        padding: 0 32px;
+    }
+
     .contacts-head__title {
         flex-direction: row;
         justify-content:space-between;
@@ -246,9 +255,32 @@ font-weight: 400;
         width: 197px;
     }
 
+    /*Map section*/
     .contact-info__title h3 {
         font-size: 38px;
     }
 }
+@media screen and (min-width: 1024px) {
 
+    /*Header*/
+    .contacts-head__title h1 {
+        font-size: 42px;
+    }
+
+    /*Body*/
+
+    /*Contacts-FAQ section*/
+    .contacts-faq__title h2{
+        font-size: 42px;
+    }
+
+    /*Contacts-form section*/
+    .contacts-form__input {
+        width: 257px;
+    }
+
+    .contacts-form__button {
+        width: 257px;
+    }
+}
 
