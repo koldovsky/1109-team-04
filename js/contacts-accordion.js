@@ -1,6 +1,15 @@
-const styles = document.querySelector(".contacts-accordion__content");
+const accordionItem = document.querySelectorAll(".contacts-accordion__item");
 
-styles.innerText = "Hello";
+
+
+
+accordionItem.forEach((item, index) => {
+    let accordionHeader = item.querySelector(".contacts-accordion__header");
+    accordionHeader.addEventListener("click", () => {
+        item.classList.toggle("open");
+    })
+    console.log(accordionHeader);
+})
 
 
 
