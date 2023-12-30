@@ -19,7 +19,7 @@
                 <div data-include="header__content.partial.html"></div>
             </div>
         </div>
-        <section class="contacts-head"> 
+        <section class="contacts-head">
             <div class="contacts-head__title container">
                 <h1>Contacts</h1>
                 <p>Order our services now! <a href="#">+ 1 (234) 567 89 00</a></p>
@@ -42,23 +42,33 @@
                     <div class="contacts-help-section__wrapper">
                         <form class="contacts-form" action="#" method="post">
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Enter your full name*"
+                                <input class="contacts-form__input-name" type="text" placeholder="Enter your full name*"
                                     required name="full-name">
+                                <div class="error-message__name"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="tel" placeholder="Enter your phone number*"
-                                    required name="phone-number">
+                                <input class="contacts-form__input-phone" type="tel"
+                                    placeholder="Enter your phone number*" required name="phone-number">
+                                <div class="error-message__phone"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Pet's name and age*"
-                                    required name="pet-info">
+                                <input class="contacts-form__input-pets-info" type="text"
+                                    placeholder="Pet's name and age*" required name="pet-info">
+                                <div class="error-message__pets-info"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Service*" required
-                                    name="service">
-                            </div>
+                                <select class="contacts-form__input-service" name="service" required>
+                                    <option value disabled selected hidden>Choose services*</option>
+                                    <option value="service1">Pet Sitting</option>
+                                    <option value="service2">Dog Training</option>
+                                    <option value="service3">Dog Walking</option>
+                                    <option value="service4">Vet Consultations</option>
+                                    <option value="service5">Mini Hotel</option>
+                                    <option value="./services.html">More about Services</option>
+                                </select>    
+                            </div>                        
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" id="contacts-form__input-date" type="date"
+                                <input class="contacts-form__input-date" id="contacts-form__input-date" type="date"
                                     name="form-date">
                             </div>
                             <div class="contacts-form__field">

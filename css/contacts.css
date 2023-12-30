@@ -9,7 +9,7 @@
      Header     */
 
 
-.header-contacts__background{
+.header-contacts__background {
     background-color: var(--background-color);
 }
 
@@ -22,7 +22,7 @@
     padding: 40px 0;
 }
 
-.contacts-head__title { 
+.contacts-head__title {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,7 +99,7 @@
 
 .contacts-help-section__wrapper {
     display: flex;
-    justify-content:center; 
+    justify-content: center;
     align-items: baseline;
     background-color: var(--button-text-color);
     height: 100%;
@@ -117,25 +117,56 @@
     background-color: var(--button-text-color);
 }
 
-.contacts-form__field { 
+.contacts-form__field {
     width: fit-content;
     height: fit-content;
 }
 
-.contacts-form__input { 
-background-color: var(--background-saturated-color);
-color: var(--paragraph-text-color);
-width: 162px;
-height: 40px;
-text-overflow: ellipsis;
-border: none;
-border-radius: 30px;
-font-family: "Poppins Regular";
-font-size: 15px;
-font-weight: 400;
- margin-top: 20px;  
- padding: 11px 22px;
+.contacts-form__input-name,
+.contacts-form__input-phone,
+.contacts-form__input-pets-info,
+.contacts-form__input-service,
+.contacts-form__input-date {
+    background-color: var(--background-saturated-color);
+    color: var(--paragraph-text-color);
+    width: 162px;
+    height: 40px;
+    text-overflow: ellipsis;
+    border: none;
+    border-radius: 30px;
+    font-family: "Poppins Regular";
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 11px 22px;
 }
+
+.error-message__name,
+.error-message__phone,
+.error-message__pets-info {
+    font-size: 13px;
+    display: none;
+    color: var(--error-message-color);
+}
+
+.active-error {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 162px;
+    justify-content: center;
+    border-bottom: 10px;
+    border-color: black;
+    color: var(--wrong-input-color);
+}
+
+.correct {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 162px;
+    justify-content: center;
+    color: var(--correct-input-collor);
+}
+
 
 .contacts-form__button {
     background-color: var(--button-background-color);
@@ -145,26 +176,26 @@ font-weight: 400;
     width: 162px;
     height: 40px;
     border-radius: 30px;
-    font-size: 14px;    
+    font-size: 14px;
     font-family: "Poppins Bold";
     margin-top: 50px;
 }
 
-.contacts-form__button:hover{
+.contacts-form__button:hover {
     background-color: var(--title-text-color);
 }
 
 /*Map section*/
 .contacts-map {
-   position: relative;
+    position: relative;
 }
 
-.contacts-map iframe{ 
+.contacts-map iframe {
     width: 100%;
     min-height: 860px;
-    position: relative; 
-    z-index: 1; 
-}   
+    position: relative;
+    z-index: 1;
+}
 
 .contact-info {
     position: absolute;
@@ -177,7 +208,7 @@ font-weight: 400;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width:min-content;
+    max-width: min-content;
     min-width: 272px;
     min-height: 324px;
     border-radius: 5%;
@@ -185,7 +216,7 @@ font-weight: 400;
     transform: translateX(-50%);
 }
 
-.contact-info__title h3{
+.contact-info__title h3 {
     font-family: "Rubik Bold", sans-serif;
     font-size: 28px;
     color: var(--title-text-color);
@@ -211,14 +242,14 @@ font-weight: 400;
 
     .contacts-head__title {
         flex-direction: row;
-        justify-content:space-between;
+        justify-content: space-between;
         padding: 0 32px;
     }
 
     .contacts-head__title h1 {
         font-size: 38px;
     }
-    
+
     .contacts-head__title p {
         display: flex;
         flex-wrap: wrap;
@@ -234,7 +265,7 @@ font-weight: 400;
     }
 
     /*Contacts-FAQ section*/
-    .contacts-faq__title h2{
+    .contacts-faq__title h2 {
         font-size: 38px;
     }
 
@@ -247,8 +278,20 @@ font-weight: 400;
         margin-top: 0;
     }
 
-    .contacts-form__input {
+    .contacts-form__input-name,
+    .contacts-form__input-phone,
+    .contacts-form__input-pets-info,
+    .contacts-form__input-service,
+    .contacts-form__input-date {
         width: 197px;
+    }
+
+    .active-error {
+        max-width: 197px;
+    }
+
+    .correct {
+        max-width: 197px;
     }
 
     .contacts-form__button {
@@ -260,6 +303,7 @@ font-weight: 400;
         font-size: 38px;
     }
 }
+
 @media screen and (min-width: 1024px) {
 
     /*Header*/
@@ -270,17 +314,30 @@ font-weight: 400;
     /*Body*/
 
     /*Contacts-FAQ section*/
-    .contacts-faq__title h2{
+    .contacts-faq__title h2 {
         font-size: 42px;
     }
 
     /*Contacts-form section*/
-    .contacts-form__input {
+    .contacts-form__input-name,
+    .contacts-form__input-phone,
+    .contacts-form__input-pets-info,
+    .contacts-form__input-service,
+    .contacts-form__input-date {
         width: 257px;
+    }
+
+    .active-error {
+        font-size: 15px;
+        max-width: 257px;
+    }
+
+    .correct {
+        font-size: 15px;
+        max-width: 257px;
     }
 
     .contacts-form__button {
         width: 257px;
     }
 }
-
