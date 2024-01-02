@@ -143,7 +143,8 @@
 
 .error-message__name,
 .error-message__phone,
-.error-message__pets-info {
+.error-message__pets-info,
+.error-message__choose-servise {
     font-size: 13px;
     display: none;
     color: var(--error-message-color);
@@ -165,6 +166,12 @@
     max-width: 162px;
     justify-content: center;
     color: var(--correct-input-collor);
+}
+
+.option-link {
+    color: blue;
+    text-decoration: underline;
+    text-shadow: 1ch;
 }
 
 

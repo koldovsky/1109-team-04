@@ -20,7 +20,7 @@ inputName.addEventListener("input", () => {
         errorMessageName.classList.remove("active-error");
         errorMessageName.classList.add("correct");
     }
-    if (fullName.length === 0){
+    if (fullName.length === 0) {
         errorMessageName.classList.remove("active-error");
         errorMessageName.classList.remove("correct");
     }
@@ -42,7 +42,7 @@ inputPhone.addEventListener("input", () => {
         errorMessagePhone.classList.remove("correct");
         errorMessagePhone.classList.add("active-error");
     }
-    if (phoneNumber.length === 0){
+    if (phoneNumber.length === 0) {
         errorMessagePhone.classList.remove("active-error");
         errorMessagePhone.classList.remove("correct");
     }
@@ -51,9 +51,9 @@ inputPhone.addEventListener("input", () => {
 const petsInfoInput = document.querySelector(".contacts-form__input-pets-info");
 const errorMessagePetsInfo = document.querySelector(".error-message__pets-info")
 
-petsInfoInput.addEventListener("input",() => {
+petsInfoInput.addEventListener("input", () => {
     const petsInfo = petsInfoInput.value;
-    const petsInfoPattern = /^[a-zA-Z,.-_ ]+[0-9]{2}$/;
+    const petsInfoPattern = /^[a-zA-Z,.-_ ]+[0-9]{1,}$/;
     if (petsInfoPattern.test(petsInfo)) {
         errorMessagePetsInfo.textContent = "Success!";
         errorMessagePetsInfo.classList.remove("error-message");
@@ -71,9 +71,49 @@ petsInfoInput.addEventListener("input",() => {
 })
 
 const serviceInput = document.querySelector(".contacts-form__input-service");
+const chooseServiceError = document.querySelector(".error-message__choose-servise");
 
 serviceInput.addEventListener("change", function () {
     const selectedOption = this.value;
-    window.location.href = selectedOption;
-})
+
+    if (selectedOption === "option-link") {
+        window.open('./services.html', '_blank');
+        chooseServiceError.classList.remove("correct");
+        chooseServiceError.textContent = "Now choose services, please!"
+        chooseServiceError.classList.add("active-error");
+    }
+    else {
+        chooseServiceError.classList.remove("active-error");
+        chooseServiceError.textContent = "Succes!";
+        chooseServiceError.classList.add("correct");
+    }
+});
+
+
+//Date input format
+const today = new Date();
+const yyyy = today.getFullYear();
+let mm = today.getMonth() + 1;
+let dd = today.getDate();
+
+if (dd < 10) dd = "0" + dd;
+if (mm < 10) mm = "0" + mm;
+
+const formattedToday = yyyy + "-" + mm + "-" + dd;
+document.querySelector(".contacts-form__input-date").value = formattedToday;
+
+//Submit
+const contactsForm = document.querySelector(".contacts-form");
+
+contactsForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (errorMessageName.classList.contains("correct") && errorMessagePhone.classList.contains("correct")
+        && errorMessagePetsInfo.classList.contains("correct") && !chooseServiceError.classList.contains("active-error")) {
+        contactsForm.submit();
+    }
+});
+
+
+
 
