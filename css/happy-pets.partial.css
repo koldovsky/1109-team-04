@@ -106,6 +106,14 @@
         font-size: 38px;
         line-height: 49.4px;
     }
+
+    .happy-pets_item-img:first-of-type {
+        padding-right: 40px;
+    }
+
+    .happy-pets_item-img:last-of-type {
+        padding: 0 25px;
+    }
 }
 
 @media (min-width: 992px) {
