@@ -7,13 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contacts</title>
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/contacts-accordion.css">
     <link rel="shortcut icon" href="img/icon-website.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header-wrapper">
-            <div data-include="header__content.partial.html"></div>
+        <div class="header-contacts__background">
+            <div class="header-contacts__wrapper container">
+                <div data-include="header__content.partial.html"></div>
+            </div>
         </div>
         <section class="contacts-head">
             <div class="contacts-head__title container">
@@ -31,67 +35,42 @@
                         <p>Perhaps you'll find an answer to your question here.</p>
                     </div>
                     <div class="contacts-faq__contacts-accordion contacts-accordion">
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">What services do your provide?</button>
-                            <div class="contacts-accordion__content">
-                                <p>We offer all services related to pet care. These include grooming, training, dog
-                                    walking, pet sitting, pet hotel, etc.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">Do you have a professional vet?</button>
-                            <div class="contacts-accordion__content">
-                                <p>Yes, we have 3 vets that specialize in different pets, from cats to parrots and
-                                    exotic animals. Still, we're not a vet clinic, so our vets provide only
-                                    consultations and do not perform any procedures.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">What does a pet sitter do?</button>
-                            <div class="contacts-accordion__content">
-                                <p>A pet sitter is a person that looks after your pets when you're out. It includes
-                                    feeding, washing, providing walks and exercises, etc.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">Can I leave my pet at your place?</button>
-                            <div class="contacts-accordion__content">
-                                <p>Yes, you travel with peace of mind. We have a mini-hotel for all kinds of pets.
-                                    It is spacious, comfortable, and fully equipped.</p>
-                            </div>
-                        </div>
-                        <div class="contacts-accordion__item">
-                            <button class="contacts-accordion__button">Can I order one-time pet sitting
-                                services?</button>
-                            <div class="contacts-accordion__content">
-                                <p>Sure, if you need a pet sitter just once, you can order such a service. Also, you
-                                    can request a pet sitter for 1-2 hours and decide whether you want to use our
-                                    services later.</p>
-                            </div>
-                        </div>
+                        <div data-include="contacts-accordion.partial.html"></div>
                     </div>
                 </div>
                 <div class="contacts-help-section__form-container ">
                     <div class="contacts-help-section__wrapper">
                         <form class="contacts-form" action="#" method="post">
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Enter your full name*"
+                                <input class="contacts-form__input-name" type="text" placeholder="Enter your full name*"
                                     required name="full-name">
+                                <div class="error-message__name"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="tel" placeholder="Enter your phone number*"
-                                    required name="phone-number">
+                                <input class="contacts-form__input-phone" type="tel"
+                                    placeholder="Enter your phone number*" required name="phone-number">
+                                <div class="error-message__phone"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Pet's name and age*"
-                                    required name="pet-info">
+                                <input class="contacts-form__input-pets-info" type="text"
+                                    placeholder="Pet's name and age*" required name="pet-info">
+                                <div class="error-message__pets-info"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Service*" required
-                                    name="service">
+                                <select class="contacts-form__input-service" name="service" required>
+                                    <option value disabled selected hidden>Choose services*</option>
+                                    <option value="service1">Pet Sitting</option>
+                                    <option value="service2">Dog Training</option>
+                                    <option value="service3">Dog Walking</option>
+                                    <option value="service4">Vet Consultations</option>
+                                    <option value="service5">Mini Hotel</option>
+                                    <option class="option-link" value="option-link">More about Services</option>
+                                </select>
+                                <div class="error-message__choose-servise"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="date" name="form-date">
+                                <input class="contacts-form__input-date" type="date" name="form-date"
+                                    value="dd-mm-yyyy">
                             </div>
                             <div class="contacts-form__field">
                                 <button class="contacts-form__button" type="submit">Request a quote</button>
@@ -111,15 +90,16 @@
                     <h3>Contacts</h3>
                 </div>
                 <div class="contact-info__row">
-                    <p>2562 Francis Lewis Blvd, Flushing, NY 11358</p>
+                    <p>2562 Francis Lewis</p>
+                    <p>Blvd, Flushing, NY 11358</p>
                 </div>
                 <div class="contact-info__row">
                     <p>Mon - Sat: 11 AM - 9 PM</p>
                     <p>Sun: 11 AM - 7 PM</p>
                 </div>
                 <div class="contact-info__row">
-                    <a class="contact-info__email-link" href="#">bestpet@email.com</a>
-                    <a class="contact-info__number-link" href="#">+ 1 (234) 567 89 00</a>
+                    <p><a class="contact-info__email-link" href="#">bestpet@email.com</a></p>
+                    <p><a class="contact-info__number-link" href="#">+ 1 (234) 567 89 00</a></p>
                 </div>
             </div>
         </section>
@@ -129,6 +109,8 @@
 
     </footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script src="js/contacts-accordion.js"></script>
+    <script src="js/contacts.js"></script>
 </body>
 
 </html>

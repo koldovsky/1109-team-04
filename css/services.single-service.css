@@ -39,7 +39,7 @@
 /* Consultations section */
 
 .consultations {
-    padding: 120px 0 55px;
+    padding: 90px 0 55px;
 }
 
 .consultations__img {
@@ -131,14 +131,18 @@
         padding: 0 32px;
     }
 
-    .consultations__description {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
     .vet-consultations__title h1 {
         font-size: 38px;
         line-height: 49.4px;
+    }
+
+    .consultations {
+        padding: 105px 0 55px;
+    }
+
+    .consultations__description {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
     }
 
     .consultations__description-left-item h2 {
@@ -164,6 +168,10 @@
     .vet-consultations__title p {
         font-size: 15px;
         line-height: 20px;
+    }
+
+    .consultations {
+        padding: 120px 0 55px;
     }
 
     .consultations__description-left-item h2 {

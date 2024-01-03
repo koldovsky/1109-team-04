@@ -72,9 +72,14 @@
     margin-bottom: 30px;
 }
 
+.our-services__img {
+    aspect-ratio: 4/3;
+}
+
 .our-services__img img {
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .our-services__img-parrot {
@@ -200,6 +205,14 @@
     .our-services__img,
     .our-services__text {
         min-height: 488.31px;
+    }
+
+    .our-services__img {
+        aspect-ratio: auto;
+    }
+
+    .our-services__img img {
+        border-radius: 0px;
     }
 }
 

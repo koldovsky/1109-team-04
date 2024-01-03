@@ -1,0 +1,88 @@
+.brands-carousel__container {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    min-height: 200px;
+}
+
+.brands-carousel__image {
+    padding: 20px;
+    background-color: var(--background-saturated-color);
+    border-radius: 30px;
+    /* width: 200px;
+    height: 95px; */
+}
+
+.brands-carousel__image img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.brands-carousel__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+/* .brands-carousel__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.brands-carousel__image {
+    width: 200px; 
+    height: 100px; 
+    overflow: hidden;
+    position: relative;
+    background-color: var(--background-saturated-color);
+    border-radius: 30px; 
+}
+
+.brands-carousel__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+
+
+
+
+
+
+.brands-carousel__icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 3px solid var(--button-icon-color);
+    border-left: 3px solid var(--button-icon-color);
+    background-color: transparent;
+    border-radius: 2px;
+  }
+  
+.brands-carousel__button-next .brands-carousel__icon {
+    transform: rotate(135deg);
+}
+  
+.brands-carousel__button-prev .brands-carousel__icon {
+    transform: rotate(-50deg);
+}
+  
+.brands-carousel__button-next,
+.brands-carousel__button-prev {
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+

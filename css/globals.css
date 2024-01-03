@@ -1,42 +1,4 @@
-@font-face {
-    font-family: "Rubik Bold";
-    src: url(../fonts/Rubik-Bold.ttf);
-}
-
-@font-face {
-    font-family: "Rubik SemiBold";
-    src: url(../fonts/Rubik-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: "Rubik Regular";
-    src: url(../fonts/Rubik-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Poppins Regular";
-    src: url(../fonts/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Poppins Medium";
-    src: url(../fonts/Poppins-Medium.ttf);
-}
-
-@font-face {
-    font-family: "Poppins SemiBold";
-    src: url(../fonts/Poppins-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: "Poppins Bold";
-    src: url(../fonts/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: "Rubik Light";
-    src: url(../fonts/Rubik-Light.ttf);
-}
+@import url(fonts.css);
 
 * {
     box-sizing: border-box;
@@ -61,6 +23,10 @@
     --header-navigation-link-color: rgb(106, 110, 143);
     --header-icons-hover-color: rgb(255,0,0);
     --contacts-accordion-content-color: rgb(106, 110, 143);
+    --button-background-color-hover:rgb(247, 229, 213);
+    --button-icon-color:rgb(209, 188, 161);
+    --wrong-input-color: rgba(245, 0, 0, 0.877);
+    --correct-input-collor: rgb(5, 168, 5);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }
@@ -75,11 +41,16 @@ h2 {
     font-family: "Rubik Bold";
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+}
 .container-background {
     background-color: var(--background-color); 
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
+.fixed {
+    position: fixed;
+    width: 100%;
 }

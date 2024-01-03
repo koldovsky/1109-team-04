@@ -1,3 +1,8 @@
+.header {
+    position: relative;
+    z-index: 1;
+}
+
 .header__background {
     background-image: url(../img/header-background-image.png);
     background-size: cover;
@@ -53,12 +58,20 @@
     display: none;
 }
 
+.header .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 17px;
+    list-style: none;
+}
+
 .header .nav__link {
     position: relative;
     text-decoration: none;
     color: var(--header-navigation-link-color);
-    font-weight: 500;
-    font-size: 15px;
 }
 
 .header .nav__link:hover {
@@ -74,11 +87,86 @@
     margin-left: -2.5px;
 }
 
-.header__top-icons--burger {
-    height: 40px;
-    width: 40px;
-    background-image: url(../img/header-burger-menu.svg);
-    background-repeat: no-repeat;
+.header__menu-btn {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 19px 8px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    order: 3;
+}
+
+.header__menu-btn:hover {
+    opacity: 0.6;
+}
+
+.header__navicon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    position: relative;
+    background: var(--title-text-color);
+    cursor: pointer;
+    transition: background .2s ease-out;
+}
+
+.header__navicon:before,
+.header__navicon:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: var(--title-text-color);
+    transition: all .2s ease-out;
+}
+
+.header__navicon:before {
+    top: 7px;
+}
+
+.header__navicon:after {
+    top: -7px;
+}
+
+.header.responsive .nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.header.responsive .header__background,
+.header.responsive .nav {
+    background: var(--background-color);
+}
+
+.header.responsive .header__navicon {
+    background: transparent;
+}
+
+.header.responsive .header__navicon {
+    background: transparent;
+}
+
+.header.responsive .header__navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header.responsive .header__navicon:after {
+    transform: rotate(45deg);
+}
+
+.header.responsive .header__navicon:before,
+.header.responsive .header__navicon:after {
+    top: 0;
 }
 
 .header__top-icons-link {
@@ -197,7 +285,7 @@
         background-position: 41% center;
     }
 
-    .header__top-icons--burger {
+    .header__menu-btn  {
         display: none;
     }
 
@@ -242,9 +330,10 @@
     }
 
     .header .nav__list {
-        list-style: none;
         display: flex;
+        flex-direction: row;
         gap: 36px;
+        font-size: 15px;
     }
 
     .header .nav__link::after {
