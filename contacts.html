@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/contacts-accordion.css">
     <link rel="shortcut icon" href="img/icon-website.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header-wrapper">
-            <div data-include="header__content.partial.html"></div>
+        <div class="header-contacts__background">
+            <div class="header-contacts__wrapper container">
+                <div data-include="header__content.partial.html"></div>
+            </div>
         </div>
         <section class="contacts-head">
             <div class="contacts-head__title container">
@@ -39,23 +42,35 @@
                     <div class="contacts-help-section__wrapper">
                         <form class="contacts-form" action="#" method="post">
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Enter your full name*"
+                                <input class="contacts-form__input-name" type="text" placeholder="Enter your full name*"
                                     required name="full-name">
+                                <div class="error-message__name"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="tel" placeholder="Enter your phone number*"
-                                    required name="phone-number">
+                                <input class="contacts-form__input-phone" type="tel"
+                                    placeholder="Enter your phone number*" required name="phone-number">
+                                <div class="error-message__phone"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Pet's name and age*"
-                                    required name="pet-info">
+                                <input class="contacts-form__input-pets-info" type="text"
+                                    placeholder="Pet's name and age*" required name="pet-info">
+                                <div class="error-message__pets-info"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" type="text" placeholder="Service*" required
-                                    name="service">
+                                <select class="contacts-form__input-service" name="service" required>
+                                    <option value disabled selected hidden>Choose services*</option>
+                                    <option value="service1">Pet Sitting</option>
+                                    <option value="service2">Dog Training</option>
+                                    <option value="service3">Dog Walking</option>
+                                    <option value="service4">Vet Consultations</option>
+                                    <option value="service5">Mini Hotel</option>
+                                    <option class="option-link" value="option-link">More about Services</option>
+                                </select>
+                                <div class="error-message__choose-servise"></div>
                             </div>
                             <div class="contacts-form__field">
-                                <input class="contacts-form__input" id="contacts-form__input-date" type="date" name="form-date">
+                                <input class="contacts-form__input-date" type="date" name="form-date"
+                                    value="dd-mm-yyyy">
                             </div>
                             <div class="contacts-form__field">
                                 <button class="contacts-form__button" type="submit">Request a quote</button>

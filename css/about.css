@@ -115,6 +115,11 @@
 .services-intro__button:active {
     background-color: var(--button-hover-color);
 }
+.meet_our_team__partial{
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
 
 
 @media (min-width: 768px) {
@@ -148,5 +153,4 @@
     .about {
         padding: 40px 20px;
     }
-    
 }

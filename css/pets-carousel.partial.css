@@ -1,0 +1,122 @@
+.pets-carousel {
+    padding: 60px 24px;
+}
+
+.pets-carousel__container {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+}
+
+.pets-carousel__items {
+    display: flex;
+    gap: 30px;
+}
+
+.pets-carousel__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 29px 25px;
+    background-color: var(--background-light-color);
+    border-radius: 10px;
+}
+
+.pets-carousel__item-img {
+    width: 50px;
+}
+
+.pets-carousel__item-title {
+    color: var(--title-text-color);
+    font-family: "Rubik SemiBold";
+    font-size: 22px;
+    line-height: 31.427px;
+}
+
+.pets-carousel__item-text {
+    color: var(--paragraph-text-color);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+.pets-carousel__item-link {
+    color: var(--link-text-color);
+    font-family: "Poppins Bold";
+    font-size: 12.6px;
+    line-height: 15.12px;
+    text-decoration: none;
+    padding-right: 32px; 
+    background-image: url("../img/link-arrow.svg");
+    background-size: 24px 24px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.pets-carousel__item-link:hover {
+    text-decoration: underline;
+}
+
+.pets-carousel__arrow {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 3px solid var(--title-text-color);
+    border-left: 3px solid var(--title-text-color);
+    background-color: transparent;
+  }
+  
+.pets-carousel__button-next .pets-carousel__arrow {
+    transform: rotate(135deg);
+}
+  
+.pets-carousel__button-prev .pets-carousel__arrow {
+    transform: rotate(-50deg);
+}
+  
+.pets-carousel__button-next,
+.pets-carousel__button-prev {
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+
+    .pets-carousel {
+        padding: 60px 32px;
+    }
+    
+    .pets-carousel__item-img {
+        width: 70px;
+    }
+
+    .pets-carousel__item-title {
+        font-size: 23px;
+        line-height: 32.8555px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .pets-carousel {
+        padding: 60px 40px;
+    }
+
+    .pets-carousel__item-title {
+        font-size: 24px;
+        line-height: 34.284px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .pets-carousel {
+        padding: 60px 15px;
+    }
+}

@@ -1,22 +1,41 @@
 @import url(globals.css);
 
-.contacts-accordion__button {
+.contacts-accordion__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.contacts-accordion__title {
     font-family: "Poppins Medium", sans-serif;
     font-size: 17px;
     color: var(--subtitle-text-color);
     font-weight: 700;
 }
 
-.contacts-accordion__content {
-    font-family: "Poppins Regular", sans-serif;
-    font-size: 17px;
-    color: var(--contacts-accordion-content-color);
-    font-weight: 400;
+.contacts-accordion__item {
+    overflow: hidden;
 }
-.contacts-accordion__content-active {
-    display: block;
+
+.contacts-accordion__item.open .contacts-accordion__line{
+   margin-top: 17px;
+}
+
+.contacts-accordion__description {
     font-family: "Poppins Regular", sans-serif;
     font-size: 17px;
     color: var(--contacts-accordion-content-color);
     font-weight: 400;
+    height: 0;
+    transition: all 0.2s linear;
+}
+
+.contacts-accordion__icon{
+    width: 17px;
+}
+
+.contacts-accordion__line{
+    margin-top: 2px; 
+    color: var(--contacts-accordion-content-color);
 }
