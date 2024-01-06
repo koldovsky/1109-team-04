@@ -5,6 +5,13 @@
     margin-top: 50px;
 }
 
+.questions-and-form{
+    display: grid;
+    padding: 0 9px;
+    grid-template-columns: 1fr;
+    padding: 60px 0;
+}
+
 .contacts-help-section__wrapper {
     display: flex;
     justify-content: center;
