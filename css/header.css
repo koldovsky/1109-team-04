@@ -72,6 +72,7 @@
     position: relative;
     text-decoration: none;
     color: var(--header-navigation-link-color);
+    font-family: 'Poppins Medium';
 }
 
 .header .nav__link:hover {
