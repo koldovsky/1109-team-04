@@ -112,13 +112,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: fit-content;
+    width: 70%;
     max-height: fit-content;
     background-color: var(--button-text-color);
 }
 
 .contacts-form__field {
-    width: fit-content;
+    width: 100%;
     height: fit-content;
 }
 
@@ -129,7 +129,8 @@
 .contacts-form__input-date {
     background-color: var(--background-saturated-color);
     color: var(--paragraph-text-color);
-    width: 162px;
+    width: 100%;
+    max-width: 370px;
     height: 40px;
     text-overflow: ellipsis;
     border: none;
@@ -145,6 +146,7 @@
 .error-message__phone,
 .error-message__pets-info,
 .error-message__choose-servise {
+    width: 100%;
     font-size: 13px;
     display: none;
     color: var(--error-message-color);
@@ -152,9 +154,10 @@
 
 .active-error {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 162px;
+    width: 100%;
+    max-width: 370px;
     justify-content: center;
+    align-items: center;
     border-bottom: 10px;
     border-color: black;
     color: var(--wrong-input-color);
@@ -163,7 +166,8 @@
 .correct {
     display: flex;
     flex-wrap: wrap;
-    max-width: 162px;
+    width: 100%;
+    max-width: 370px;
     justify-content: center;
     color: var(--correct-input-collor);
 }
@@ -180,7 +184,8 @@
     color: var(--button-text-color);
     padding: 10px;
     border: 1px;
-    width: 162px;
+    width: 100%;
+    max-width: 370px;
     height: 40px;
     border-radius: 30px;
     font-size: 14px;
@@ -285,26 +290,6 @@
         margin-top: 0;
     }
 
-    .contacts-form__input-name,
-    .contacts-form__input-phone,
-    .contacts-form__input-pets-info,
-    .contacts-form__input-service,
-    .contacts-form__input-date {
-        width: 197px;
-    }
-
-    .active-error {
-        max-width: 197px;
-    }
-
-    .correct {
-        max-width: 197px;
-    }
-
-    .contacts-form__button {
-        width: 197px;
-    }
-
     /*Map section*/
     .contact-info__title h3 {
         font-size: 38px;
@@ -325,26 +310,12 @@
         font-size: 42px;
     }
 
-    /*Contacts-form section*/
-    .contacts-form__input-name,
-    .contacts-form__input-phone,
-    .contacts-form__input-pets-info,
-    .contacts-form__input-service,
-    .contacts-form__input-date {
-        width: 257px;
-    }
 
     .active-error {
         font-size: 15px;
-        max-width: 257px;
     }
 
     .correct {
         font-size: 15px;
-        max-width: 257px;
-    }
-
-    .contacts-form__button {
-        width: 257px;
     }
 }
