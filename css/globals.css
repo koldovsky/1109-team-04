@@ -27,6 +27,7 @@
     --button-icon-color:rgb(209, 188, 161);
     --wrong-input-color: rgba(245, 0, 0, 0.877);
     --correct-input-collor: rgb(5, 168, 5);
+    --footer-boarder-color: rgb(4, 15, 115);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }
