@@ -28,6 +28,9 @@
     --wrong-input-color: rgba(245, 0, 0, 0.877);
     --correct-input-collor: rgb(5, 168, 5);
     --footer-boarder-color: rgb(4, 15, 115);
+    --map-icon-background-color: rgb(255, 91, 46);
+    --clock-icon-background-color: rgb(144, 204, 255);
+    --telephone-icon-background-color: rgb(250, 191, 62);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }

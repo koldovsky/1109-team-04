@@ -166,8 +166,7 @@
         padding: 105px 0;
     }
 
-    .contacts-help-section__container,
-    .questions-and-form {
+    .contacts-help-section__container {
         grid-template-columns: 1fr 1fr;
     }
 

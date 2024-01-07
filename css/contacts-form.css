@@ -10,6 +10,7 @@
     padding: 0 9px;
     grid-template-columns: 1fr;
     padding: 60px 0;
+    gap: 50px;
 }
 
 .contacts-help-section__wrapper {
@@ -113,6 +114,10 @@
 }
 
 @media screen and (min-width: 767px) {
+
+    .questions-and-form {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .contacts-help-section__wrapper {
         border-radius: 40px;
