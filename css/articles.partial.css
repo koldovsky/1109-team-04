@@ -68,7 +68,11 @@
 }
 
 .cards_button_border{
-    
+    margin-left:15px;
+    color: #ff5b2e; 
+    width:84px;
+    height:19px;
+    font-size:14px;
 }
 
 @media (min-width: 768px) {
