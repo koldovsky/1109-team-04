@@ -67,6 +67,10 @@
     gap: 30px;
 }
 
+.cards_button_border{
+    
+}
+
 @media (min-width: 768px) {
     .blockarticles_cards {     
         grid-template-columns: 1fr 1fr;
