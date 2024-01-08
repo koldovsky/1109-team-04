@@ -73,7 +73,8 @@
     font-weight: 300;
 }
 
-.questions-content__info p, a {
+.questions-content__info p, 
+.questions-content__info a {
     font-family: "Poppins Regular", sans-serif;
     font-size: 17px;
     color: var(--contacts-accordion-content-color);
