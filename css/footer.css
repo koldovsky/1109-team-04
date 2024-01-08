@@ -98,7 +98,7 @@
 }
 
 .footer-label-text {
-    font-family: "Poppins Regular";
+    font-family: "Poppins Medium";
     font-size: 14px;
     line-height: 18.6px;
     color: var(--header-navigation-link-color);
@@ -119,6 +119,11 @@
 
 .footer-form__button:hover {
     background-color: var(--title-text-color);
+}
+
+.footer-form input {
+    color: var(--button-hover-color);
+    font-family: "Poppins Regular";
 }
 
 .footer-input-form {

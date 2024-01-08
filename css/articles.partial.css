@@ -1,10 +1,4 @@
 
-body{
-    display: flex;
-    justify-content: center;
-    background-color: #fff6ed;
-}
-
 .Articles{
     display: flex;
     font-size: 42px;
@@ -23,16 +17,10 @@ body{
 
 .blockarticles_cards{
    margin-top: 50px;
-   display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    height: 552px;
-    justify-content: space-around;
 }
 .BlockArticles_cards_card {
    
     position: relative;
-    width: 400px;
     justify-content: center;
     align-items: center;
     
@@ -40,7 +28,6 @@ body{
 
 .cards_card_h6{
     
-    margin-left: 15px;
     margin-top: 30px;
     color: #ff5b2e;
     font-family: 'Poppins', sans-serif;
@@ -68,4 +55,22 @@ body{
     color: rgb(106,110,143);
     font-size: 17px;
     line-height: 1.5;
+}
+
+.blockarticles_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .blockarticles_cards {     
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .blockarticles_cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
