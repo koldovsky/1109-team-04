@@ -51,7 +51,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .cards_card_h1{
