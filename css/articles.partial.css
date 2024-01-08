@@ -24,10 +24,10 @@ body{
 .blockarticles_cards{
    margin-top: 50px;
    display: flex;
-    
+    flex-wrap: wrap;
     width: 1200px;
     height: 552px;
-    
+    justify-content: space-around;
 }
 .BlockArticles_cards_card {
    
