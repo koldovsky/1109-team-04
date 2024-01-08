@@ -64,5 +64,8 @@ body{
 }
 .cards_text{
 
-    
+     margin-left: 15px;
+    color: rgb(106,110,143);
+    font-size: 17px;
+    line-height: 1.5;
 }
