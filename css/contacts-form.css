@@ -11,6 +11,8 @@
     grid-template-columns: 1fr;
     padding: 60px 0;
     gap: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .contacts-help-section__wrapper {
