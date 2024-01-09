@@ -28,12 +28,9 @@
 .blockarticles_cards{
    margin-top: 50px;
    padding-left: 15px;
-   padding: right 15px;
-   
-   
-   
-   
+   padding-right: 15px; 
 }
+
 .BlockArticles_cards_card {
    
     position: relative;
