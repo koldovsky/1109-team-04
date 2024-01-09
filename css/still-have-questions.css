@@ -1,12 +1,14 @@
 @import url(globals.css);
 
+.questions-and-form {
+    padding: 60px 15px;
+}
+
 .questions-container {
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--background-color);
-    padding: 0 15px;
-    text-align: left;
-    
+    text-align: left; 
 }
 
 .questions-title h2 {
