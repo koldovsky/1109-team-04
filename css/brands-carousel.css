@@ -1,55 +1,9 @@
-/* .brands-carousel__container {
+ .brands-carousel__container {
     display: grid;
     grid-template-columns: 40px 1fr 40px;
     min-height: 200px;
-}
-
-.brands-carousel__image {
-    padding: 20px;
-    background-color: var(--background-saturated-color);
-    border-radius: 30px;
-}
-
-.brands-carousel__image img {
-    width: 100%; 
-    height: 100%; 
-}
-
-.brands-carousel__images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-} */
-
-
-
-
-
-/* .brands-carousel__container {
-    display: flex;
-    justify-content: center;
-    min-height: 200px;
-}
-
-.brands-carousel__images img {
-    max-width: 200px;
-    background-color: var(--background-saturated-color);
-    border-radius: 30px; 
-}
-
-.brands-carousel__images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-} */
-
-  
-.brands-carousel__container {
-    display: grid;
-    grid-template-columns: 40px 1fr 40px;
-    min-height: 200px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .brands-carousel__image {

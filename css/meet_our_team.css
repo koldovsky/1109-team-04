@@ -4,6 +4,8 @@
 
 .team__info {
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .team__title {
