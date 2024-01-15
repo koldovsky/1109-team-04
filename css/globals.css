@@ -23,6 +23,14 @@
     --header-navigation-link-color: rgb(106, 110, 143);
     --header-icons-hover-color: rgb(255,0,0);
     --contacts-accordion-content-color: rgb(106, 110, 143);
+    --button-background-color-hover:rgb(247, 229, 213);
+    --button-icon-color:rgb(209, 188, 161);
+    --wrong-input-color: rgba(245, 0, 0, 0.877);
+    --correct-input-collor: rgb(5, 168, 5);
+    --footer-boarder-color: rgb(4, 15, 115);
+    --map-icon-background-color: rgb(255, 91, 46);
+    --clock-icon-background-color: rgb(144, 204, 255);
+    --telephone-icon-background-color: rgb(250, 191, 62);
     scroll-behavior: smooth;
     font-family: "Poppins Regular";
 }
@@ -37,13 +45,13 @@ h2 {
     font-family: "Rubik Bold";
 }
 
-.container-background {
-    background-color: var(--background-color); 
-}
-
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+  
+}
+.container-background {
+    background-color: var(--background-color); 
 }
 
 .fixed {

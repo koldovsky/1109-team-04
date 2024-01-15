@@ -1,5 +1,8 @@
 @import url(globals.css);
 @import url(header.css);
+@import url(footer.css);
+@import url(contacts-form.css);
+@import url(contacts-accordion.css);
 
 .contacts-help-section {
     background-color: var(--background-color);
@@ -8,12 +11,21 @@
 /* Main section 
      Header     */
 
+
+.header-contacts__background {
+    background-color: var(--background-color);
+}
+
+.header-contacts__wrapper {
+    padding: 0 24px;
+}
+
 .contacts-head {
     background-color: var(--background-saturated-color);
     padding: 40px 0;
 }
 
-.contacts-head__title { 
+.contacts-head__title {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -69,123 +81,85 @@
     text-align: left;
     font-size: 28px;
     font-weight: 700;
+    margin: 20px 0;
 }
 
 .contacts-faq__title p {
     font-family: "Poppins Medium", sans-serif;
     font-size: 19px;
     color: var(--subtitle-text-color);
-}
-
-.contacts-accordion__button{
-    font-family: "Poppins Medium", sans-serif;
-    font-size: 17px;
-    color: var(--subtitle-text-color);
-    font-weight: 700;
-}
-
-.contacts-accordion__content {
-    font-family: "Poppins Regular", sans-serif;
-    font-size: 17px;
-    color: var(--contacts-accordion-content-color);
-    font-weight: 400;
-}
-
-/*Contacts-form section*/
-
-.contacts-help-section__form-container {
-    background-color: var(--background-color);
-    text-align: center;
-    padding: 0 15px;
-    margin-top: 50px;
-}
-
-.contacts-help-section__wrapper {
-    display: flex;
-    justify-content:center; 
-    align-items: baseline;
-    background-color: var(--button-text-color);
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    padding: 30px 0;
-}
-
-.contacts-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: fit-content;
-    max-height: fit-content;
-    background-color: var(--button-text-color);
-}
-
-.contacts-form__field { 
-    width: fit-content;
-    height: fit-content;
-}
-
-.contacts-form__input { 
-background-color: var(--background-saturated-color);
-color: var(--paragraph-text-color);
-width: 162px;
-height: 40px;
-text-overflow: ellipsis;
-border: none;
-border-radius: 30px;
-font-family: "Poppins Regular";
-font-size: 15px;
-font-weight: 400;
- margin-top: 20px;  
- padding: 11px 22px;
-}
-
-.contacts-form__button {
-    background-color: var(--button-background-color);
-    color: var(--button-text-color);
-    padding: 10px;
-    border: 1px;
-    width: 162px;
-    height: 40px;
-    border-radius: 30px;
-    font-size: 14px;    
-    font-family: "Poppins Bold";
-    margin-top: 50px;
-}
-
-.contacts-form__button:hover{
-    background-color: var(--title-text-color);
+    margin-bottom: 20px;
 }
 
 /*Map section*/
+.contacts-map {
+    position: relative;
+}
 
-.contacts-map iframe{
+.contacts-map iframe {
     width: 100%;
-}   
+    min-height: 860px;
+    position: relative;
+    z-index: 1;
+}
 
 .contact-info {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
     background-color: var(--button-text-color);
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: min-content;
     min-width: 272px;
     min-height: 324px;
+    border-radius: 5%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.contact-info__title h3 {
+    font-family: "Rubik Bold", sans-serif;
+    font-size: 28px;
+    color: var(--title-text-color);
+}
+
+.contact-info__row {
+    font-family: "Poppins Regular";
+    font-size: 17px;
+    color: var(--paragraph-text-color);
+}
+
+.contact-info__row a {
+    text-decoration: none;
+    color: var(--paragraph-text-color);
+}
+
+.contact-info__row a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 767px) {
 
     /*Header*/
+    .header-contacts__wrapper {
+        padding: 0 32px;
+    }
+
     .contacts-head__title {
         flex-direction: row;
-        justify-content:space-between;
+        justify-content: space-between;
         padding: 0 32px;
     }
 
     .contacts-head__title h1 {
         font-size: 38px;
     }
-    
+
     .contacts-head__title p {
         display: flex;
         flex-wrap: wrap;
@@ -201,22 +175,28 @@ font-weight: 400;
     }
 
     /*Contacts-FAQ section*/
-    .contacts-faq__title h2{
+    .contacts-faq__title h2 {
         font-size: 38px;
     }
 
-    /*Contacts-form section*/
-    .contacts-help-section__wrapper {
-        border-radius: 40px;
-    }
-
-    .contacts-help-section__form-container {
-        margin-top: 0;
-    }
-
-    .contacts-form__input {
-        width: 197px;
+    /*Map section*/
+    .contact-info__title h3 {
+        font-size: 38px;
     }
 }
 
+@media screen and (min-width: 1024px) {
 
+    /*Header*/
+    .contacts-head__title h1 {
+        font-size: 42px;
+    }
+
+    /*Body*/
+
+    /*Contacts-FAQ section*/
+    .contacts-faq__title h2 {
+        font-size: 42px;
+    }
+
+}

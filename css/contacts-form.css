@@ -1,0 +1,141 @@
+.contacts-help-section__form-container {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.questions-and-form{
+    display: grid;
+    padding: 0 9px;
+    grid-template-columns: 1fr;
+    padding: 60px 0;
+    gap: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contacts-help-section__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: var(--button-text-color);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    max-height: fit-content;
+    background-color: var(--button-text-color);
+}
+
+.contacts-form__field {
+    height: fit-content;
+}
+
+.contacts-form__input-name,
+.contacts-form__input-phone,
+.contacts-form__input-pets-info,
+.contacts-form__input-service,
+.contacts-form__input-date {
+    background-color: var(--background-saturated-color);
+    color: var(--paragraph-text-color);
+    width: 100%;
+    max-width: 370px;
+    height: 40px;
+    text-overflow: ellipsis;
+    border: none;
+    border-radius: 30px;
+    font-family: "Poppins Regular";
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 11px 22px;
+}
+
+.error-message__name,
+.error-message__phone,
+.error-message__pets-info,
+.error-message__choose-servise {
+    width: 100%;
+    font-size: 13px;
+    display: none;
+    color: var(--error-message-color);
+}
+
+.active-error {
+    display: flex;
+    width: 100%;
+    max-width: 370px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px;
+    border-color: black;
+    color: var(--wrong-input-color);
+}
+
+.correct {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 370px;
+    justify-content: center;
+    color: var(--correct-input-collor);
+}
+
+.option-link {
+    color: blue;
+    text-decoration: underline;
+    text-shadow: 1ch;
+}
+
+
+.contacts-form__button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    border: 1px;
+    width: 100%;
+    max-width: 370px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: "Poppins Bold";
+    margin-top: 50px;
+}
+
+.contacts-form__button:hover {
+    background-color: var(--title-text-color);
+}
+
+@media screen and (min-width: 767px) {
+
+    .questions-and-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contacts-help-section__wrapper {
+        border-radius: 40px;
+    }
+
+    .contacts-help-section__form-container {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .active-error {
+        font-size: 15px;
+    }
+
+    .correct {
+        font-size: 15px;
+    }
+}

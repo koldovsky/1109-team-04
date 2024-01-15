@@ -1,0 +1,122 @@
+@import url(globals.css);
+
+.questions-and-form {
+    padding: 60px 15px;
+}
+
+.questions-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--background-color);
+    text-align: left; 
+}
+
+.questions-title h2 {
+    font-family: "Rubik Bold", sans-serif;
+    color: var(--title-text-color);
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.questions-title p {
+    font-family: "Poppins Medium", sans-serif;
+    font-size: 19px;
+    color: var(--subtitle-text-color);
+    margin-bottom: 20px;
+}
+
+.questions-content {
+    display: flex;
+    flex-direction: row;
+    padding: 7.5px 0;
+    gap: 10px;
+}
+
+.icon-background {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    padding-right: 10px;
+}
+
+.icon-background img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}
+
+.map-icon-background {
+    background-color: var(--map-icon-background-color);
+}
+
+.clock-icon-background {
+    background-color: var(--clock-icon-background-color);
+}
+
+.telephone-icon-background {
+    background-color: var(--telephone-icon-background-color);
+}
+
+.questions-content__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.questions-content__info h3 {
+    color: var(--title-text-color);
+    font-size: 22px;
+    font-family: "Rubik Bold", sans-serif;
+    font-weight: 300;
+}
+
+.questions-content__info p, 
+.questions-content__info a {
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 17px;
+    color: var(--contacts-accordion-content-color);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.questions-content__info a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 767px) {
+
+    .questions-title h2 {
+        font-size: 38px;
+    }
+
+    .icon-background {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon-background img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .questions-content__info h3 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .questions-title h2 {
+        font-size: 42px;
+    }
+
+    .questions-content__info h3 {
+        font-size: 24px;
+    }
+}
