@@ -47,6 +47,13 @@
     width: 400px;
 }
 
+.faq-accordion__button {
+    box-sizing: border-box;
+    color: var(--subtitle-text-color);
+    font-family: "Poppins SemiBold", sans-serif;
+    font-size: 17px;
+}
+
 .faq-accordion__icon {
     font-size: 17px;
     margin-left: 20px;
