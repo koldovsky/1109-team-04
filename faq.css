@@ -3,4 +3,9 @@
 
 .faq {
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-width: 320px;
+    position: relative;
+    z-index: 1;
 }
