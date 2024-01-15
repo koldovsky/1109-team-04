@@ -28,3 +28,12 @@
     width: 400px;
     height: 600px;
 }
+
+faq-accordion__item {
+    font-size: 17px;
+    height: 15px;
+    margin-left: 20px;
+    max-width: 15px;
+    text-align: left;
+    position: relative;
+}
