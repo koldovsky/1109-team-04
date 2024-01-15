@@ -46,7 +46,7 @@
 }
 
 .faq-accordion__item {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 20px;
     cursor: pointer;
