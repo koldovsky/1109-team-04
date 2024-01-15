@@ -1,0 +1,6 @@
+@import url(globals.css);
+@import url(header.css);
+
+.faq {
+    background-color: var(--background-color);
+}
