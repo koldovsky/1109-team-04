@@ -9,3 +9,18 @@
     position: relative;
     z-index: 1;
 }
+
+.questions {
+    display: flex;
+    background-color: var(--background-color);
+    padding: 0 15px;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+.faq-picture {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: baseline;
+}
