@@ -50,8 +50,14 @@
 .faq-accordion__button {
     box-sizing: border-box;
     color: var(--subtitle-text-color);
-    font-family: "Poppins SemiBold", sans-serif;
+    font-family: "Poppins Medium", sans-serif;
     font-size: 17px;
+}
+
+.faq-accordion__content {
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 17px;
+    color:var(--contacts-accordion-content-color);
 }
 
 .faq-accordion__icon {
