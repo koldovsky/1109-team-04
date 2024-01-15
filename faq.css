@@ -9,6 +9,16 @@
     z-index: 1;
 }
 
+.questions__title {
+    display: block;
+    color: var(--subtitle-text-color);
+    font-family: Rubik, sans-serif;
+    font-size: 38px;
+    text-align: left;
+    text-transform: none;
+
+}
+
 .questions {
     display: flex;
     background-color: var(--background-color);
