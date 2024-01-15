@@ -16,6 +16,8 @@
     padding: 0 15px;
     text-align: left;
     vertical-align: baseline;
+    width: 400px;
+    height: 600px;
 }
 
 .faq-picture {
@@ -23,4 +25,6 @@
     padding-left: 15px;
     padding-right: 15px;
     vertical-align: baseline;
+    width: 400px;
+    height: 600px;
 }
