@@ -14,12 +14,11 @@
 }
 
 .questions {
-    display: flex;
+    display: block
     padding-left: 15px;
     padding-right: 15px;
     vertical-align: baseline;
     width: 400px;
-    height: 600px;
 }
 
 .questions__title {
