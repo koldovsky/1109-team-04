@@ -48,7 +48,7 @@
 .faq-accordion__item {
     display: flex;
     justify-content: space-between;
-    padding: 20px, 0;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
     color: var(--subtitle-text-color);
     font-family: "Poppins Medium", sans-serif;
     font-size: 17px;
-    padding: 20px, 0;
+    padding: 20px;
 }
 
 .faq-accordion__content {
