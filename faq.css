@@ -11,8 +11,8 @@
 
 .questions__title {
     display: block;
-    color: var(--subtitle-text-color);
-    font-family: Rubik, sans-serif;
+    color: var(--title-text-color);
+    font-family: Rubik Bold, sans-serif;
     font-size: 38px;
     text-align: left;
     text-transform: none;
