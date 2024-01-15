@@ -30,6 +30,15 @@
     text-transform: none;
 }
 
+.questions__text {
+    display: block;
+    color: var(--subtitle-text-color);
+    font-family: "Poppins SemiBold", sans-serif;
+    font-size: 19px;
+    text-align: left;
+    text-transform: none;
+}
+
 .faq-picture {
     display: flex;
     padding-left: 15px;
