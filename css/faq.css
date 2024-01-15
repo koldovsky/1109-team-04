@@ -36,12 +36,10 @@
     padding-right: 15px;
     vertical-align: baseline;
     width: 400px;
-    height: 600px;
 }
 
 faq-accordion__icon {
     font-size: 17px;
-    height: auto;
     margin-left: 20px;
     max-width: 15px;
     text-align: left;
