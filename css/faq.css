@@ -28,7 +28,7 @@
     font-size: 38px;
     text-align: left;
     text-transform: none;
-    padding: 20px, 0;
+    padding: 20px;
 }
 
 .questions__text {
@@ -38,7 +38,7 @@
     font-size: 19px;
     text-align: left;
     text-transform: none;
-    padding: 0, 0, 20px;
+    padding: 20px;
 }
 
 .faq-accordion__list {
