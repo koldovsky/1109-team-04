@@ -74,6 +74,7 @@
     color: var(--subtitle-text-color);
     font-family: "Poppins Medium", sans-serif;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .faq-accordion__content {
