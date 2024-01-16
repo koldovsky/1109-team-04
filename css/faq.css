@@ -81,6 +81,10 @@
     color:var(--contacts-accordion-content-color);
 }
 
+.questions-text__block {
+    padding-bottom: 20px;
+}
+
 .faq-accordion__icon {
     font-size: 17px;
     margin-left: 20px;
