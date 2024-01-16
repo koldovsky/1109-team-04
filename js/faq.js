@@ -25,7 +25,7 @@ accordionItems.forEach((item, index) => {
 })
 
 function removeClassOpen(index) {
-    accordionItem.forEach((item2,index2) => {
+    accordionItems.forEach((item2,index2) => {
         if(index != index2) {
             item2.classList.remove("open");
             let description2 = item2.querySelector(".questions-text__block");
