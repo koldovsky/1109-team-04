@@ -1,7 +1,3 @@
-document.addEventListener("partialsLoaded", () => {
-    import("./header.js");
-  });
-
 const accordionList = document.querySelectorAll(".faq-accordion__list");
 
 
