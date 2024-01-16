@@ -8,7 +8,7 @@ accordionItems.forEach((item, index) => {
     accordionHeader.addEventListener("click", () => {
         item.classList.toggle("open");
 
-        let description = item.querySelector(".questions-text__block);
+        let description = item.querySelector(".questions-text__block");
         let icon = item.querySelector(".faq-accordion__icon");
         if(item.classList.contains("open")) {
             description.style.height = `${description.scrollHeight}px`
