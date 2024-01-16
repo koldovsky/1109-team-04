@@ -52,6 +52,13 @@
     cursor: pointer;
 }
 
+.faq-accordion__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
 .faq-picture {
     display: flex;
     padding-left: 15px;
