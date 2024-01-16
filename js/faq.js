@@ -1,9 +1,9 @@
-const accordionItem = document.querySelectorAll(".faq-accordion__item");
+const accordionItems = document.querySelectorAll(".faq-accordion__item");
 
 
 
 
-accordionItem.forEach((item, index) => {
+accordionItems.forEach((item, index) => {
     let accordionHeader = item.querySelector(".faq-accordion__header");
     accordionHeader.addEventListener("click", () => {
         item.classList.toggle("open");
