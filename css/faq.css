@@ -48,7 +48,6 @@
 .faq-accordion__item {
     display: block;
     justify-content: space-between;
-    padding: 20px;
     cursor: pointer;
 }
 
@@ -58,6 +57,7 @@
     cursor: pointer;
     white-space: nowrap;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .faq-picture {
