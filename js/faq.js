@@ -1,4 +1,4 @@
-const accordionList = document.querySelectorAll(".faq-accordion__list");
+const accordionList = document.querySelectorAll(".faq-accordion__item");
 
 
 
