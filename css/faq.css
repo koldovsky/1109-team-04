@@ -57,6 +57,7 @@
     justify-content: space-between;
     cursor: pointer;
     white-space: nowrap;
+    padding: 20px, 0;
 }
 
 .faq-picture {
