@@ -28,7 +28,6 @@
     font-size: 38px;
     text-align: left;
     text-transform: none;
-    padding-left: 20px;
     padding-top: 20px;
 }
 
@@ -39,8 +38,8 @@
     font-size: 19px;
     text-align: left;
     text-transform: none;
-    padding-left: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .faq-accordion__list {
